@@ -16,6 +16,10 @@ interface CategoryFilterProps {
 }
 
 export function CategoryFilter({ categories, selected, onChange }: CategoryFilterProps) {
+    // Get the 'all' category for count
+    const allCategory = categories.find(c => c.id === 'all');
+    const otherCategories = categories.filter(c => c.id !== 'all');
+
     return (
         <div className="flex flex-wrap gap-3">
             <button
@@ -23,8 +27,11 @@ export function CategoryFilter({ categories, selected, onChange }: CategoryFilte
                 className={`tag ${selected === 'all' ? 'gradient-blue text-white' : ''} cursor-pointer transition-all`}
             >
                 ✨ All Skills
+                {allCategory?.count !== undefined && (
+                    <span className="ml-1 opacity-70">({allCategory.count})</span>
+                )}
             </button>
-            {categories.map((category) => (
+            {otherCategories.map((category) => (
                 <button
                     key={category.id}
                     onClick={() => onChange(category.id)}

@@ -9,6 +9,15 @@ import { skills, categories, getSkillsByCategory, searchSkills } from '@/data/sk
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [sortOrder, setSortOrder] = useState<'popular' | 'newest' | 'name'>('popular');
+
+  // Dynamic category counts
+  const categoriesWithCounts = useMemo(() => {
+    return categories.map(cat => ({
+      ...cat,
+      count: cat.id === 'all' ? skills.length : skills.filter(s => s.category === cat.id).length
+    }));
+  }, []);
 
   const filteredSkills = useMemo(() => {
     let result = getSkillsByCategory(selectedCategory);
@@ -16,8 +25,21 @@ export default function Home() {
       const searchResults = searchSkills(searchQuery);
       result = result.filter(skill => searchResults.includes(skill));
     }
+    // Apply sorting
+    switch (sortOrder) {
+      case 'popular':
+        result = [...result].sort((a, b) => b.upvotes - a.upvotes);
+        break;
+      case 'newest':
+        // Sort by id (newer skills have later ids)
+        result = [...result].sort((a, b) => b.id.localeCompare(a.id));
+        break;
+      case 'name':
+        result = [...result].sort((a, b) => a.name.localeCompare(b.name));
+        break;
+    }
     return result;
-  }, [searchQuery, selectedCategory]);
+  }, [searchQuery, selectedCategory, sortOrder]);
 
   const totalSkills = skills.length;
 
@@ -78,7 +100,7 @@ export default function Home() {
       {/* Category Filter */}
       <section id="categories" className="mb-8">
         <CategoryFilter
-          categories={categories}
+          categories={categoriesWithCounts}
           selected={selectedCategory}
           onChange={setSelectedCategory}
         />
@@ -97,10 +119,14 @@ export default function Home() {
               </h2>
               <div className="flex items-center gap-2 text-caption">
                 <span>Sort by:</span>
-                <select className="bg-white border-none rounded-lg px-3 py-2 text-sm shadow-[var(--shadow-soft)]">
-                  <option>Most Popular</option>
-                  <option>Newest</option>
-                  <option>Name A-Z</option>
+                <select
+                  className="bg-white border-none rounded-lg px-3 py-2 text-sm shadow-[var(--shadow-soft)] cursor-pointer"
+                  value={sortOrder}
+                  onChange={(e) => setSortOrder(e.target.value as 'popular' | 'newest' | 'name')}
+                >
+                  <option value="popular">Most Popular</option>
+                  <option value="newest">Newest</option>
+                  <option value="name">Name A-Z</option>
                 </select>
               </div>
             </div>
