@@ -838,246 +838,6 @@ export const skills: Skill[] = [
         githubUrl: 'https://github.com/modelcontextprotocol/servers',
         upvotes: 2000,
     },
-
-    // Conversational AI Skills
-    {
-        id: 'voice-agent-framework',
-        name: 'Voice Agent Framework',
-        slug: 'voice-agent-framework',
-        description: 'Build voice-enabled AI agents with speech recognition, TTS, and dialogue management.',
-        source: 'community',
-        category: 'development',
-        tags: ['voice', 'speech', 'TTS', 'STT', 'dialogue'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'pip install voice-agent-framework',
-        githubUrl: 'https://github.com/livekit/agents',
-        upvotes: 3200,
-    },
-    {
-        id: 'agora-convo-ai',
-        name: 'Agora Conversational AI',
-        slug: 'agora-convo-ai',
-        description: 'Real-time voice AI integration with Agora for building conversational applications.',
-        source: 'community',
-        category: 'development',
-        tags: ['Agora', 'voice', 'realtime', 'conversation'],
-        platforms: ['claude-code'],
-        installCommand: 'npm install agora-rtc-sdk-ng',
-        githubUrl: 'https://github.com/AgoraIO/agora-rtc-sdk',
-        upvotes: 2800,
-    },
-    {
-        id: 'whisper-transcription',
-        name: 'Whisper Transcription',
-        slug: 'whisper-transcription',
-        description: 'OpenAI Whisper-based transcription skill for audio-to-text conversion.',
-        source: 'community',
-        category: 'development',
-        tags: ['Whisper', 'transcription', 'audio', 'speech'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'pip install openai-whisper',
-        githubUrl: 'https://github.com/openai/whisper',
-        upvotes: 5500,
-    },
-    {
-        id: 'elevenlabs-tts',
-        name: 'ElevenLabs TTS',
-        slug: 'elevenlabs-tts',
-        description: 'High-quality text-to-speech with ElevenLabs voice synthesis.',
-        source: 'community',
-        category: 'creative',
-        tags: ['TTS', 'voice', 'synthesis', 'ElevenLabs'],
-        platforms: ['claude-code'],
-        installCommand: 'pip install elevenlabs',
-        githubUrl: 'https://github.com/elevenlabs/elevenlabs-python',
-        upvotes: 3800,
-    },
-
-    // Product Manager Skills
-    {
-        id: 'prd-generator',
-        name: 'PRD Generator',
-        slug: 'prd-generator',
-        description: 'Generate professional Product Requirement Documents with structured templates.',
-        source: 'skillsmp',
-        category: 'productivity',
-        tags: ['PRD', 'product', 'documentation', 'requirements'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'Copy prd-generator.md to .claude/skills/',
-        githubUrl: 'https://github.com/ruvnet/prd-generator',
-        upvotes: 1200,
-    },
-    {
-        id: 'user-story-writer',
-        name: 'User Story Writer',
-        slug: 'user-story-writer',
-        description: 'Create well-structured user stories with acceptance criteria and edge cases.',
-        source: 'skillsmp',
-        category: 'productivity',
-        tags: ['user-story', 'agile', 'product', 'requirements'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'Copy user-story.md to .claude/skills/',
-        githubUrl: 'https://github.com/ruvnet/user-story-skill',
-        upvotes: 980,
-    },
-    {
-        id: 'competitive-analysis',
-        name: 'Competitive Analysis',
-        slug: 'competitive-analysis',
-        description: 'Analyze competitors, market positioning, and feature comparisons.',
-        source: 'skillsmp',
-        category: 'productivity',
-        tags: ['competitive', 'market', 'analysis', 'research'],
-        platforms: ['claude-code'],
-        installCommand: 'Copy competitive-analysis.md to .claude/skills/',
-        githubUrl: 'https://github.com/skillsmp/competitive-analysis',
-        upvotes: 850,
-    },
-    {
-        id: 'roadmap-planner',
-        name: 'Roadmap Planner',
-        slug: 'roadmap-planner',
-        description: 'Create product roadmaps with milestones, dependencies, and timeline visualization.',
-        source: 'skillsmp',
-        category: 'productivity',
-        tags: ['roadmap', 'planning', 'milestones', 'timeline'],
-        platforms: ['claude-code'],
-        installCommand: 'Copy roadmap-planner.md to .claude/skills/',
-        githubUrl: 'https://github.com/skillsmp/roadmap-planner',
-        upvotes: 920,
-    },
-
-    // More Development Tools
-    {
-        id: 'docker-expert',
-        name: 'Docker Expert',
-        slug: 'docker-expert',
-        description: 'Expert guidance on Docker containers, Compose, and containerization best practices.',
-        source: 'community',
-        category: 'development',
-        tags: ['Docker', 'containers', 'DevOps', 'deployment'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'Copy docker-expert.md to .claude/skills/',
-        githubUrl: 'https://github.com/docker/awesome-compose',
-        upvotes: 2200,
-    },
-    {
-        id: 'kubernetes-helper',
-        name: 'Kubernetes Helper',
-        slug: 'kubernetes-helper',
-        description: 'K8s deployment, scaling, and cluster management assistance.',
-        source: 'community',
-        category: 'development',
-        tags: ['Kubernetes', 'K8s', 'orchestration', 'DevOps'],
-        platforms: ['claude-code'],
-        installCommand: 'Copy k8s-helper.md to .claude/skills/',
-        githubUrl: 'https://github.com/kubernetes/examples',
-        upvotes: 2400,
-    },
-    {
-        id: 'terraform-iac',
-        name: 'Terraform IaC',
-        slug: 'terraform-iac',
-        description: 'Infrastructure as Code with Terraform for cloud resource management.',
-        source: 'community',
-        category: 'development',
-        tags: ['Terraform', 'IaC', 'cloud', 'infrastructure'],
-        platforms: ['claude-code'],
-        installCommand: 'Copy terraform.md to .claude/skills/',
-        githubUrl: 'https://github.com/hashicorp/terraform',
-        upvotes: 2600,
-    },
-    {
-        id: 'graphql-expert',
-        name: 'GraphQL Expert',
-        slug: 'graphql-expert',
-        description: 'Design and implement GraphQL APIs with schemas, resolvers, and best practices.',
-        source: 'community',
-        category: 'development',
-        tags: ['GraphQL', 'API', 'schema', 'queries'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'Copy graphql-expert.md to .claude/skills/',
-        githubUrl: 'https://github.com/graphql/graphql-js',
-        upvotes: 1800,
-    },
-    {
-        id: 'nextjs-expert',
-        name: 'Next.js Expert',
-        slug: 'nextjs-expert',
-        description: 'Next.js app router, server components, and full-stack React development.',
-        source: 'community',
-        category: 'development',
-        tags: ['Next.js', 'React', 'SSR', 'full-stack'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'Copy nextjs-expert.md to .claude/skills/',
-        githubUrl: 'https://github.com/vercel/next.js',
-        upvotes: 3500,
-    },
-    {
-        id: 'tailwind-designer',
-        name: 'Tailwind Designer',
-        slug: 'tailwind-designer',
-        description: 'Design beautiful UIs with Tailwind CSS utility classes and design system patterns.',
-        source: 'community',
-        category: 'creative',
-        tags: ['Tailwind', 'CSS', 'UI', 'design'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'Copy tailwind-designer.md to .claude/skills/',
-        githubUrl: 'https://github.com/tailwindlabs/tailwindcss',
-        upvotes: 2900,
-    },
-    {
-        id: 'prisma-orm',
-        name: 'Prisma ORM Expert',
-        slug: 'prisma-orm',
-        description: 'Database modeling, migrations, and queries with Prisma ORM.',
-        source: 'community',
-        category: 'development',
-        tags: ['Prisma', 'ORM', 'database', 'TypeScript'],
-        platforms: ['claude-code'],
-        installCommand: 'npm install prisma @prisma/client',
-        githubUrl: 'https://github.com/prisma/prisma',
-        upvotes: 2100,
-    },
-    {
-        id: 'supabase-backend',
-        name: 'Supabase Backend',
-        slug: 'supabase-backend',
-        description: 'Build backends with Supabase - PostgreSQL, Auth, Storage, and Realtime.',
-        source: 'community',
-        category: 'development',
-        tags: ['Supabase', 'PostgreSQL', 'BaaS', 'auth'],
-        platforms: ['claude-code'],
-        installCommand: 'npm install @supabase/supabase-js',
-        githubUrl: 'https://github.com/supabase/supabase',
-        upvotes: 3100,
-    },
-    {
-        id: 'langchain-agent',
-        name: 'LangChain Agent',
-        slug: 'langchain-agent',
-        description: 'Build LLM-powered agents with LangChain for complex reasoning and tool use.',
-        source: 'community',
-        category: 'development',
-        tags: ['LangChain', 'LLM', 'agents', 'chains'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'pip install langchain langchain-anthropic',
-        githubUrl: 'https://github.com/langchain-ai/langchain',
-        upvotes: 4200,
-    },
-    {
-        id: 'llamaindex-rag',
-        name: 'LlamaIndex RAG',
-        slug: 'llamaindex-rag',
-        description: 'Build RAG applications with LlamaIndex for document Q&A and knowledge retrieval.',
-        source: 'community',
-        category: 'development',
-        tags: ['LlamaIndex', 'RAG', 'embeddings', 'documents'],
-        platforms: ['claude-code', 'codex'],
-        installCommand: 'pip install llama-index',
-        githubUrl: 'https://github.com/run-llama/llama_index',
-        upvotes: 3800,
-    },
 ];
 
 export const categories = [
@@ -1091,6 +851,7 @@ export const categories = [
     { id: 'productivity', name: 'Productivity', icon: '📊', count: 1 },
     { id: 'meta', name: 'Meta', icon: '⚙️', count: 2 },
     { id: 'benchmark', name: 'Benchmarks', icon: '📈', count: 14 },
+    { id: 'emerging', name: 'Emerging Skills', icon: '🌱', count: 0 },
 ];
 
 export function getSkillBySlug(slug: string): Skill | undefined {
@@ -1099,7 +860,15 @@ export function getSkillBySlug(slug: string): Skill | undefined {
 
 export function getSkillsByCategory(categoryId: string): Skill[] {
     if (categoryId === 'all') return skills;
-    return skills.filter(skill => skill.category === categoryId);
+    // Emerging category shows only non-featured (low-star) skills
+    if (categoryId === 'emerging') {
+        return skills.filter(skill => skill.featured === false);
+    }
+    // Other categories show only featured skills (default true for curated)
+    return skills.filter(skill => {
+        const isFeatured = skill.featured !== false; // default to true
+        return skill.category === categoryId && isFeatured;
+    });
 }
 
 export function searchSkills(query: string): Skill[] {
@@ -1109,4 +878,20 @@ export function searchSkills(query: string): Skill[] {
         skill.description.toLowerCase().includes(lowerQuery) ||
         skill.tags.some(tag => tag.toLowerCase().includes(lowerQuery))
     );
+}
+
+// Get featured skills count for each category
+export function getCategoryCounts(): Record<string, number> {
+    const counts: Record<string, number> = { all: skills.length, emerging: 0 };
+
+    for (const skill of skills) {
+        const isFeatured = skill.featured !== false;
+        if (isFeatured) {
+            counts[skill.category] = (counts[skill.category] || 0) + 1;
+        } else {
+            counts.emerging = (counts.emerging || 0) + 1;
+        }
+    }
+
+    return counts;
 }

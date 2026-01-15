@@ -8,7 +8,7 @@ export interface Skill {
     name: string;
     slug: string;
     description: string;
-    source: 'anthropic' | 'obra' | 'composio' | 'community' | 'nanobanana' | 'skillsmp' | 'skillsbench';
+    source: 'anthropic' | 'obra' | 'composio' | 'community' | 'nanobanana' | 'skillsmp' | 'skillsbench' | 'github';
     category: string;
     tags: string[];
     platforms: string[];
@@ -16,6 +16,8 @@ export interface Skill {
     githubUrl?: string;
     upvotes: number;
     difficulty?: 'easy' | 'medium' | 'hard';
+    stars?: number;           // GitHub stars count
+    featured?: boolean;       // true if stars >= 100, default true for curated skills
 }
 
 interface SkillCardProps {
@@ -30,6 +32,7 @@ const sourceColors: Record<string, string> = {
     nanobanana: 'gradient-orange',
     skillsmp: 'gradient-blue',
     skillsbench: 'gradient-purple',
+    github: 'gradient-purple',
 };
 
 const sourceIcons: Record<string, string> = {
@@ -40,6 +43,7 @@ const sourceIcons: Record<string, string> = {
     nanobanana: '🍌',
     skillsmp: '📦',
     skillsbench: '📊',
+    github: '🐙',
 };
 
 const categoryIcons: Record<string, string> = {

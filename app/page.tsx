@@ -1,21 +1,41 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import { SkillCard } from '@/components/ui/SkillCard';
 import { SearchBar } from '@/components/ui/SearchBar';
 import { CategoryFilter } from '@/components/ui/CategoryFilter';
-import { skills, categories, getSkillsByCategory, searchSkills } from '@/data/skills';
+import { GitHubResults } from '@/components/ui/GitHubResults';
+import { skills, categories, getSkillsByCategory, searchSkills, getCategoryCounts } from '@/data/skills';
+
+interface GitHubRepo {
+  id: number;
+  name: string;
+  fullName: string;
+  description: string;
+  url: string;
+  stars: number;
+  topics: string[];
+  language: string;
+  owner: string;
+  ownerAvatar: string;
+}
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [sortOrder, setSortOrder] = useState<'popular' | 'newest' | 'name'>('popular');
 
-  // Dynamic category counts
+  // GitHub search state
+  const [githubResults, setGithubResults] = useState<GitHubRepo[]>([]);
+  const [githubLoading, setGithubLoading] = useState(false);
+  const [githubError, setGithubError] = useState<string | null>(null);
+
+  // Dynamic category counts with featured logic
   const categoriesWithCounts = useMemo(() => {
+    const counts = getCategoryCounts();
     return categories.map(cat => ({
       ...cat,
-      count: cat.id === 'all' ? skills.length : skills.filter(s => s.category === cat.id).length
+      count: counts[cat.id] || 0
     }));
   }, []);
 
@@ -31,7 +51,6 @@ export default function Home() {
         result = [...result].sort((a, b) => b.upvotes - a.upvotes);
         break;
       case 'newest':
-        // Sort by id (newer skills have later ids)
         result = [...result].sort((a, b) => b.id.localeCompare(a.id));
         break;
       case 'name':
@@ -40,6 +59,43 @@ export default function Home() {
     }
     return result;
   }, [searchQuery, selectedCategory, sortOrder]);
+
+  // Debounced GitHub search
+  const searchGitHub = useCallback(async (query: string) => {
+    if (!query || query.length < 2) {
+      setGithubResults([]);
+      return;
+    }
+
+    setGithubLoading(true);
+    setGithubError(null);
+
+    try {
+      const response = await fetch(`/api/search/github?q=${encodeURIComponent(query)}`);
+      const data = await response.json();
+
+      if (data.error) {
+        setGithubError(data.error);
+        setGithubResults([]);
+      } else {
+        setGithubResults(data.items || []);
+      }
+    } catch {
+      setGithubError('Failed to search GitHub');
+      setGithubResults([]);
+    } finally {
+      setGithubLoading(false);
+    }
+  }, []);
+
+  // Debounce search query
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      searchGitHub(searchQuery);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery, searchGitHub]);
 
   const totalSkills = skills.length;
 
@@ -139,12 +195,20 @@ export default function Home() {
         ) : (
           <div className="text-center py-16">
             <div className="text-6xl mb-4">🔍</div>
-            <h3 className="heading-md mb-2">No skills found</h3>
+            <h3 className="heading-md mb-2">No curated skills found</h3>
             <p className="text-body">
-              Try adjusting your search or filter criteria
+              Try adjusting your search or check GitHub results below
             </p>
           </div>
         )}
+
+        {/* GitHub Discovery Section */}
+        <GitHubResults
+          query={searchQuery}
+          results={githubResults}
+          loading={githubLoading}
+          error={githubError}
+        />
       </section>
 
       {/* About Section */}
@@ -176,10 +240,10 @@ export default function Home() {
               </p>
             </div>
             <div className="card text-center">
-              <div className="text-4xl mb-3">📈</div>
-              <h3 className="font-bold mb-2">Benchmark</h3>
+              <div className="text-4xl mb-3">🐙</div>
+              <h3 className="font-bold mb-2">GitHub Search</h3>
               <p className="text-sm text-[var(--text-muted)]">
-                Test agent capabilities with our curated benchmark tasks.
+                Find any skill on GitHub with our real-time search integration.
               </p>
             </div>
           </div>
@@ -192,14 +256,6 @@ export default function Home() {
               className="btn-secondary"
             >
               ⭐ Star on GitHub
-            </a>
-            <a
-              href="https://skillsbench.ai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
-            >
-              📊 SkillsBench Partnership
             </a>
           </div>
         </div>
