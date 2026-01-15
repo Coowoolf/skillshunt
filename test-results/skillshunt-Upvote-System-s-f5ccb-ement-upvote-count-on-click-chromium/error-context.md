@@ -1,0 +1,105 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link "🎯 SkillsHunt Discover AI Agent Skills" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: 🎯
+          - generic [ref=e8]:
+            - heading "SkillsHunt" [level=1] [ref=e9]
+            - paragraph [ref=e10]: Discover AI Agent Skills
+        - navigation [ref=e11]:
+          - link "Explore" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - link "Categories" [ref=e13] [cursor=pointer]:
+            - /url: /#categories
+          - link "About" [ref=e14] [cursor=pointer]:
+            - /url: /#about
+        - button "Submit Skill" [ref=e16] [cursor=pointer]
+    - main [ref=e17]:
+      - generic [ref=e18]:
+        - link "Back to All Skills" [ref=e19] [cursor=pointer]:
+          - /url: /
+          - img [ref=e20]
+          - text: Back to All Skills
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e24]:
+              - generic [ref=e25]:
+                - generic [ref=e26]: 🤖
+                - generic [ref=e27]:
+                  - heading "PDF Processing" [level=1] [ref=e28]
+                  - generic [ref=e29]:
+                    - generic [ref=e30]: anthropic
+                    - generic [ref=e31]: •
+                    - generic [ref=e32]: document
+                    - generic [ref=e33]: •
+                    - generic [ref=e34]:
+                      - generic [ref=e35]: 👍
+                      - text: 342 upvotes
+              - paragraph [ref=e36]: Extract text, forms, and structured data from PDF documents. Supports OCR for scanned documents and complex layouts.
+              - generic [ref=e37]:
+                - generic [ref=e38]: PDF
+                - generic [ref=e39]: OCR
+                - generic [ref=e40]: extraction
+                - generic [ref=e41]: forms
+            - generic [ref=e42]:
+              - heading "📦 Installation" [level=2] [ref=e43]
+              - code [ref=e45]: /plugin install document-skills@anthropic-agent-skills
+              - button "Copy Command" [ref=e46] [cursor=pointer]
+            - generic [ref=e47]:
+              - heading "📖 About This Skill" [level=2] [ref=e48]
+              - generic [ref=e49]:
+                - paragraph [ref=e50]: Extract text, forms, and structured data from PDF documents. Supports OCR for scanned documents and complex layouts.
+                - heading "Features" [level=3] [ref=e51]
+                - list [ref=e52]:
+                  - listitem [ref=e53]: Works with claude-code, claude-ai
+                  - listitem [ref=e54]: Part of the anthropic skills collection
+                  - listitem [ref=e55]: "Category: document"
+                - heading "Getting Started" [level=3] [ref=e56]
+                - paragraph [ref=e57]: After installing the skill, simply mention it in your conversation or use the relevant command. The AI will automatically apply the skill's instructions to help you complete your task.
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - heading "Quick Actions" [level=3] [ref=e60]
+              - generic [ref=e61]:
+                - button "✅ Upvoted (343)" [active] [ref=e62] [cursor=pointer]
+                - link "View on GitHub" [ref=e63] [cursor=pointer]:
+                  - /url: https://github.com/anthropics/skills/tree/main/skills/pdf
+            - generic [ref=e64]:
+              - heading "Supported Platforms" [level=3] [ref=e65]
+              - generic [ref=e66]:
+                - generic [ref=e67]:
+                  - generic [ref=e68]: 💻
+                  - generic [ref=e69]: claude code
+                - generic [ref=e70]:
+                  - generic [ref=e71]: 🤖
+                  - generic [ref=e72]: claude ai
+            - generic [ref=e73]:
+              - heading "Source" [level=3] [ref=e74]
+              - generic [ref=e76]:
+                - generic [ref=e77]: 🤖
+                - generic [ref=e78]:
+                  - generic [ref=e79]: anthropic
+                  - generic [ref=e80]: Skills Collection
+    - contentinfo [ref=e81]:
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e85]: 🎯
+          - generic [ref=e86]:
+            - heading "SkillsHunt" [level=3] [ref=e87]
+            - paragraph [ref=e88]: Discover and share AI Agent Skills
+        - generic [ref=e89]:
+          - link "GitHub" [ref=e90] [cursor=pointer]:
+            - /url: https://github.com
+          - link "Anthropic Skills" [ref=e91] [cursor=pointer]:
+            - /url: https://anthropic.com
+          - link "Superpowers" [ref=e92] [cursor=pointer]:
+            - /url: https://github.com/obra/superpowers
+        - generic [ref=e93]: © 2026 SkillsHunt. Built with 🎯 using Next.js
+  - button "Open Next.js Dev Tools" [ref=e99] [cursor=pointer]:
+    - img [ref=e100]
+  - alert [ref=e103]
+```

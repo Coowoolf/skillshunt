@@ -1,0 +1,928 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - link "🎯 SkillsHunt Discover AI Agent Skills" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e7]: 🎯
+          - generic [ref=e8]:
+            - heading "SkillsHunt" [level=1] [ref=e9]
+            - paragraph [ref=e10]: Discover AI Agent Skills
+        - navigation [ref=e11]:
+          - link "Explore" [ref=e12] [cursor=pointer]:
+            - /url: /
+          - link "Categories" [ref=e13] [cursor=pointer]:
+            - /url: /#categories
+          - link "About" [ref=e14] [cursor=pointer]:
+            - /url: /#about
+        - button "Submit Skill" [ref=e16] [cursor=pointer]
+    - main [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - heading "Discover AI Agent Skills" [level=1] [ref=e20]
+          - paragraph [ref=e21]: Explore 35+ skills from Anthropic, Obra Superpowers, Composio, and the community. Find the perfect skill for your AI coding workflow.
+          - generic [ref=e23]:
+            - img [ref=e25]
+            - textbox "Search skills by name, description, or tags..." [ref=e28]
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - generic [ref=e31]: 🤖
+              - generic [ref=e32]:
+                - generic [ref=e33]: Anthropic
+                - generic [ref=e34]: Official Skills
+            - generic [ref=e35]:
+              - generic [ref=e36]: ⚡
+              - generic [ref=e37]:
+                - generic [ref=e38]: Superpowers
+                - generic [ref=e39]: Development Workflow
+            - generic [ref=e40]:
+              - generic [ref=e41]: 🔗
+              - generic [ref=e42]:
+                - generic [ref=e43]: Composio
+                - generic [ref=e44]: Awesome Skills
+            - generic [ref=e45]:
+              - generic [ref=e46]: 👥
+              - generic [ref=e47]:
+                - generic [ref=e48]: Community
+                - generic [ref=e49]: User Created
+        - generic [ref=e51]:
+          - button "✨ All Skills" [ref=e52] [cursor=pointer]
+          - button "✨ All Skills (0)" [ref=e53] [cursor=pointer]:
+            - text: ✨ All Skills
+            - generic [ref=e54]: (0)
+          - button "💻 Development (9)" [ref=e55] [cursor=pointer]:
+            - text: 💻 Development
+            - generic [ref=e56]: (9)
+          - button "📄 Document (4)" [ref=e57] [cursor=pointer]:
+            - text: 📄 Document
+            - generic [ref=e58]: (4)
+          - button "🧪 Testing (1)" [ref=e59] [cursor=pointer]:
+            - text: 🧪 Testing
+            - generic [ref=e60]: (1)
+          - button "🔍 Debugging (1)" [ref=e61] [cursor=pointer]:
+            - text: 🔍 Debugging
+            - generic [ref=e62]: (1)
+          - button "🤝 Collaboration (2)" [ref=e63] [cursor=pointer]:
+            - text: 🤝 Collaboration
+            - generic [ref=e64]: (2)
+          - button "🎨 Creative (2)" [ref=e65] [cursor=pointer]:
+            - text: 🎨 Creative
+            - generic [ref=e66]: (2)
+          - button "📊 Productivity (1)" [ref=e67] [cursor=pointer]:
+            - text: 📊 Productivity
+            - generic [ref=e68]: (1)
+          - button "⚙️ Meta (2)" [ref=e69] [cursor=pointer]:
+            - text: ⚙️ Meta
+            - generic [ref=e70]: (2)
+          - button "📈 Benchmarks (14)" [ref=e71] [cursor=pointer]:
+            - text: 📈 Benchmarks
+            - generic [ref=e72]: (14)
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - heading "All Skills(35)" [level=2] [ref=e75]:
+              - text: All Skills
+              - generic [ref=e76]: (35)
+            - generic [ref=e77]:
+              - generic [ref=e78]: "Sort by:"
+              - combobox [ref=e79]:
+                - option "Most Popular" [selected]
+                - option "Newest"
+                - option "Name A-Z"
+          - generic [ref=e80]:
+            - link "🤖 PDF Processing 📄 document • anthropic Extract text, forms, and structured data from PDF documents. Supports OCR for scanned documents and complex layouts. PDF OCR extraction +1 claude-code claude-ai 👍 342" [ref=e81] [cursor=pointer]:
+              - /url: /skills/pdf-processing
+              - generic [ref=e82]:
+                - generic [ref=e83]:
+                  - generic [ref=e84]: 🤖
+                  - generic [ref=e85]:
+                    - heading "PDF Processing" [level=3] [ref=e86]
+                    - generic [ref=e87]:
+                      - generic [ref=e88]: 📄 document
+                      - generic [ref=e89]: •
+                      - generic [ref=e90]: anthropic
+                - paragraph [ref=e91]: Extract text, forms, and structured data from PDF documents. Supports OCR for scanned documents and complex layouts.
+                - generic [ref=e92]:
+                  - generic [ref=e93]: PDF
+                  - generic [ref=e94]: OCR
+                  - generic [ref=e95]: extraction
+                  - generic [ref=e96]: "+1"
+                - generic [ref=e97]:
+                  - generic [ref=e98]:
+                    - generic [ref=e99]: claude-code
+                    - generic [ref=e100]: claude-ai
+                  - generic [ref=e101]:
+                    - generic [ref=e102]: 👍
+                    - generic [ref=e103]: "342"
+            - link "🤖 Word Document Editor 📄 document • anthropic Create, edit, and format Microsoft Word documents. Supports templates, styles, tables, and image embedding. Word DOCX formatting +1 claude-code claude-ai 👍 289" [ref=e104] [cursor=pointer]:
+              - /url: /skills/word-document-editor
+              - generic [ref=e105]:
+                - generic [ref=e106]:
+                  - generic [ref=e107]: 🤖
+                  - generic [ref=e108]:
+                    - heading "Word Document Editor" [level=3] [ref=e109]
+                    - generic [ref=e110]:
+                      - generic [ref=e111]: 📄 document
+                      - generic [ref=e112]: •
+                      - generic [ref=e113]: anthropic
+                - paragraph [ref=e114]: Create, edit, and format Microsoft Word documents. Supports templates, styles, tables, and image embedding.
+                - generic [ref=e115]:
+                  - generic [ref=e116]: Word
+                  - generic [ref=e117]: DOCX
+                  - generic [ref=e118]: formatting
+                  - generic [ref=e119]: "+1"
+                - generic [ref=e120]:
+                  - generic [ref=e121]:
+                    - generic [ref=e122]: claude-code
+                    - generic [ref=e123]: claude-ai
+                  - generic [ref=e124]:
+                    - generic [ref=e125]: 👍
+                    - generic [ref=e126]: "289"
+            - link "🤖 Excel Spreadsheet 📄 document • anthropic Work with Excel spreadsheets. Create charts, formulas, pivot tables, and complex data analysis. Excel spreadsheet charts +1 claude-code claude-ai 👍 256" [ref=e127] [cursor=pointer]:
+              - /url: /skills/excel-spreadsheet
+              - generic [ref=e128]:
+                - generic [ref=e129]:
+                  - generic [ref=e130]: 🤖
+                  - generic [ref=e131]:
+                    - heading "Excel Spreadsheet" [level=3] [ref=e132]
+                    - generic [ref=e133]:
+                      - generic [ref=e134]: 📄 document
+                      - generic [ref=e135]: •
+                      - generic [ref=e136]: anthropic
+                - paragraph [ref=e137]: Work with Excel spreadsheets. Create charts, formulas, pivot tables, and complex data analysis.
+                - generic [ref=e138]:
+                  - generic [ref=e139]: Excel
+                  - generic [ref=e140]: spreadsheet
+                  - generic [ref=e141]: charts
+                  - generic [ref=e142]: "+1"
+                - generic [ref=e143]:
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: claude-code
+                    - generic [ref=e146]: claude-ai
+                  - generic [ref=e147]:
+                    - generic [ref=e148]: 👍
+                    - generic [ref=e149]: "256"
+            - link "🤖 PowerPoint Creator 📄 document • anthropic Design and generate professional PowerPoint presentations with custom themes, animations, and layouts. PowerPoint presentation slides +1 claude-code claude-ai 👍 234" [ref=e150] [cursor=pointer]:
+              - /url: /skills/powerpoint-creator
+              - generic [ref=e151]:
+                - generic [ref=e152]:
+                  - generic [ref=e153]: 🤖
+                  - generic [ref=e154]:
+                    - heading "PowerPoint Creator" [level=3] [ref=e155]
+                    - generic [ref=e156]:
+                      - generic [ref=e157]: 📄 document
+                      - generic [ref=e158]: •
+                      - generic [ref=e159]: anthropic
+                - paragraph [ref=e160]: Design and generate professional PowerPoint presentations with custom themes, animations, and layouts.
+                - generic [ref=e161]:
+                  - generic [ref=e162]: PowerPoint
+                  - generic [ref=e163]: presentation
+                  - generic [ref=e164]: slides
+                  - generic [ref=e165]: "+1"
+                - generic [ref=e166]:
+                  - generic [ref=e167]:
+                    - generic [ref=e168]: claude-code
+                    - generic [ref=e169]: claude-ai
+                  - generic [ref=e170]:
+                    - generic [ref=e171]: 👍
+                    - generic [ref=e172]: "234"
+            - link "🤖 Web App Testing 🧪 testing • anthropic Automated testing for web applications using browser automation. Supports E2E tests, visual regression, and accessibility checks. testing browser e2e +1 claude-code 👍 198" [ref=e173] [cursor=pointer]:
+              - /url: /skills/webapp-testing
+              - generic [ref=e174]:
+                - generic [ref=e175]:
+                  - generic [ref=e176]: 🤖
+                  - generic [ref=e177]:
+                    - heading "Web App Testing" [level=3] [ref=e178]
+                    - generic [ref=e179]:
+                      - generic [ref=e180]: 🧪 testing
+                      - generic [ref=e181]: •
+                      - generic [ref=e182]: anthropic
+                - paragraph [ref=e183]: Automated testing for web applications using browser automation. Supports E2E tests, visual regression, and accessibility checks.
+                - generic [ref=e184]:
+                  - generic [ref=e185]: testing
+                  - generic [ref=e186]: browser
+                  - generic [ref=e187]: e2e
+                  - generic [ref=e188]: "+1"
+                - generic [ref=e189]:
+                  - generic [ref=e191]: claude-code
+                  - generic [ref=e192]:
+                    - generic [ref=e193]: 👍
+                    - generic [ref=e194]: "198"
+            - 'link "⚡ Test-Driven Development 💻 development • obra Enforces RED-GREEN-REFACTOR cycle: write failing test, watch it fail, write minimal code, watch it pass, commit. TDD testing red-green +1 claude-code codex 👍 456" [ref=e195] [cursor=pointer]':
+              - /url: /skills/test-driven-development
+              - generic [ref=e196]:
+                - generic [ref=e197]:
+                  - generic [ref=e198]: ⚡
+                  - generic [ref=e199]:
+                    - heading "Test-Driven Development" [level=3] [ref=e200]
+                    - generic [ref=e201]:
+                      - generic [ref=e202]: 💻 development
+                      - generic [ref=e203]: •
+                      - generic [ref=e204]: obra
+                - paragraph [ref=e205]: "Enforces RED-GREEN-REFACTOR cycle: write failing test, watch it fail, write minimal code, watch it pass, commit."
+                - generic [ref=e206]:
+                  - generic [ref=e207]: TDD
+                  - generic [ref=e208]: testing
+                  - generic [ref=e209]: red-green
+                  - generic [ref=e210]: "+1"
+                - generic [ref=e211]:
+                  - generic [ref=e212]:
+                    - generic [ref=e213]: claude-code
+                    - generic [ref=e214]: codex
+                  - generic [ref=e215]:
+                    - generic [ref=e216]: 👍
+                    - generic [ref=e217]: "456"
+            - link "⚡ Brainstorming 🤝 collaboration • obra Socratic design refinement through natural dialogue. Explores alternatives, presents designs in sections for validation. design planning socratic +1 claude-code codex 👍 389" [ref=e218] [cursor=pointer]:
+              - /url: /skills/brainstorming
+              - generic [ref=e219]:
+                - generic [ref=e220]:
+                  - generic [ref=e221]: ⚡
+                  - generic [ref=e222]:
+                    - heading "Brainstorming" [level=3] [ref=e223]
+                    - generic [ref=e224]:
+                      - generic [ref=e225]: 🤝 collaboration
+                      - generic [ref=e226]: •
+                      - generic [ref=e227]: obra
+                - paragraph [ref=e228]: Socratic design refinement through natural dialogue. Explores alternatives, presents designs in sections for validation.
+                - generic [ref=e229]:
+                  - generic [ref=e230]: design
+                  - generic [ref=e231]: planning
+                  - generic [ref=e232]: socratic
+                  - generic [ref=e233]: "+1"
+                - generic [ref=e234]:
+                  - generic [ref=e235]:
+                    - generic [ref=e236]: claude-code
+                    - generic [ref=e237]: codex
+                  - generic [ref=e238]:
+                    - generic [ref=e239]: 👍
+                    - generic [ref=e240]: "389"
+            - link "⚡ Systematic Debugging 🔍 debugging • obra 4-phase root cause process including root-cause-tracing, defense-in-depth, and condition-based-waiting techniques. debugging root-cause systematic +1 claude-code codex 👍 367" [ref=e241] [cursor=pointer]:
+              - /url: /skills/systematic-debugging
+              - generic [ref=e242]:
+                - generic [ref=e243]:
+                  - generic [ref=e244]: ⚡
+                  - generic [ref=e245]:
+                    - heading "Systematic Debugging" [level=3] [ref=e246]
+                    - generic [ref=e247]:
+                      - generic [ref=e248]: 🔍 debugging
+                      - generic [ref=e249]: •
+                      - generic [ref=e250]: obra
+                - paragraph [ref=e251]: 4-phase root cause process including root-cause-tracing, defense-in-depth, and condition-based-waiting techniques.
+                - generic [ref=e252]:
+                  - generic [ref=e253]: debugging
+                  - generic [ref=e254]: root-cause
+                  - generic [ref=e255]: systematic
+                  - generic [ref=e256]: "+1"
+                - generic [ref=e257]:
+                  - generic [ref=e258]:
+                    - generic [ref=e259]: claude-code
+                    - generic [ref=e260]: codex
+                  - generic [ref=e261]:
+                    - generic [ref=e262]: 👍
+                    - generic [ref=e263]: "367"
+            - 'link "⚡ Subagent-Driven Development 💻 development • obra Fast iteration with two-stage review: spec compliance check, then code quality review. Enables parallel agent workflows. subagent parallel review +1 claude-code 👍 312" [ref=e264] [cursor=pointer]':
+              - /url: /skills/subagent-driven-development
+              - generic [ref=e265]:
+                - generic [ref=e266]:
+                  - generic [ref=e267]: ⚡
+                  - generic [ref=e268]:
+                    - heading "Subagent-Driven Development" [level=3] [ref=e269]
+                    - generic [ref=e270]:
+                      - generic [ref=e271]: 💻 development
+                      - generic [ref=e272]: •
+                      - generic [ref=e273]: obra
+                - paragraph [ref=e274]: "Fast iteration with two-stage review: spec compliance check, then code quality review. Enables parallel agent workflows."
+                - generic [ref=e275]:
+                  - generic [ref=e276]: subagent
+                  - generic [ref=e277]: parallel
+                  - generic [ref=e278]: review
+                  - generic [ref=e279]: "+1"
+                - generic [ref=e280]:
+                  - generic [ref=e282]: claude-code
+                  - generic [ref=e283]:
+                    - generic [ref=e284]: 👍
+                    - generic [ref=e285]: "312"
+            - link "⚡ Writing Implementation Plans 🤝 collaboration • obra Creates detailed implementation plans with bite-sized tasks (2-5 minutes each). Every task has exact file paths and verification steps. planning tasks implementation +1 claude-code codex 👍 298" [ref=e286] [cursor=pointer]:
+              - /url: /skills/writing-plans
+              - generic [ref=e287]:
+                - generic [ref=e288]:
+                  - generic [ref=e289]: ⚡
+                  - generic [ref=e290]:
+                    - heading "Writing Implementation Plans" [level=3] [ref=e291]
+                    - generic [ref=e292]:
+                      - generic [ref=e293]: 🤝 collaboration
+                      - generic [ref=e294]: •
+                      - generic [ref=e295]: obra
+                - paragraph [ref=e296]: Creates detailed implementation plans with bite-sized tasks (2-5 minutes each). Every task has exact file paths and verification steps.
+                - generic [ref=e297]:
+                  - generic [ref=e298]: planning
+                  - generic [ref=e299]: tasks
+                  - generic [ref=e300]: implementation
+                  - generic [ref=e301]: "+1"
+                - generic [ref=e302]:
+                  - generic [ref=e303]:
+                    - generic [ref=e304]: claude-code
+                    - generic [ref=e305]: codex
+                  - generic [ref=e306]:
+                    - generic [ref=e307]: 👍
+                    - generic [ref=e308]: "298"
+            - link "🔗 MCP Server Builder 💻 development • composio Build Model Context Protocol (MCP) servers quickly. Generates boilerplate, handles tool registration, and testing. MCP server protocol +1 claude-code 👍 234" [ref=e309] [cursor=pointer]:
+              - /url: /skills/mcp-builder
+              - generic [ref=e310]:
+                - generic [ref=e311]:
+                  - generic [ref=e312]: 🔗
+                  - generic [ref=e313]:
+                    - heading "MCP Server Builder" [level=3] [ref=e314]
+                    - generic [ref=e315]:
+                      - generic [ref=e316]: 💻 development
+                      - generic [ref=e317]: •
+                      - generic [ref=e318]: composio
+                - paragraph [ref=e319]: Build Model Context Protocol (MCP) servers quickly. Generates boilerplate, handles tool registration, and testing.
+                - generic [ref=e320]:
+                  - generic [ref=e321]: MCP
+                  - generic [ref=e322]: server
+                  - generic [ref=e323]: protocol
+                  - generic [ref=e324]: "+1"
+                - generic [ref=e325]:
+                  - generic [ref=e327]: claude-code
+                  - generic [ref=e328]:
+                    - generic [ref=e329]: 👍
+                    - generic [ref=e330]: "234"
+            - link "🔗 Skill Creator ⚙️ meta • composio Meta-skill for creating new skills. Follows best practices, generates SKILL.md templates, and sets up testing. skills meta template +1 claude-code 👍 178" [ref=e331] [cursor=pointer]:
+              - /url: /skills/skill-creator
+              - generic [ref=e332]:
+                - generic [ref=e333]:
+                  - generic [ref=e334]: 🔗
+                  - generic [ref=e335]:
+                    - heading "Skill Creator" [level=3] [ref=e336]
+                    - generic [ref=e337]:
+                      - generic [ref=e338]: ⚙️ meta
+                      - generic [ref=e339]: •
+                      - generic [ref=e340]: composio
+                - paragraph [ref=e341]: Meta-skill for creating new skills. Follows best practices, generates SKILL.md templates, and sets up testing.
+                - generic [ref=e342]:
+                  - generic [ref=e343]: skills
+                  - generic [ref=e344]: meta
+                  - generic [ref=e345]: template
+                  - generic [ref=e346]: "+1"
+                - generic [ref=e347]:
+                  - generic [ref=e349]: claude-code
+                  - generic [ref=e350]:
+                    - generic [ref=e351]: 👍
+                    - generic [ref=e352]: "178"
+            - link "🔗 Theme Factory 🎨 creative • composio Generate beautiful, consistent UI themes. Supports dark mode, accessibility, and multiple color palettes. theme UI design +1 claude-code 👍 156" [ref=e353] [cursor=pointer]:
+              - /url: /skills/theme-factory
+              - generic [ref=e354]:
+                - generic [ref=e355]:
+                  - generic [ref=e356]: 🔗
+                  - generic [ref=e357]:
+                    - heading "Theme Factory" [level=3] [ref=e358]
+                    - generic [ref=e359]:
+                      - generic [ref=e360]: 🎨 creative
+                      - generic [ref=e361]: •
+                      - generic [ref=e362]: composio
+                - paragraph [ref=e363]: Generate beautiful, consistent UI themes. Supports dark mode, accessibility, and multiple color palettes.
+                - generic [ref=e364]:
+                  - generic [ref=e365]: theme
+                  - generic [ref=e366]: UI
+                  - generic [ref=e367]: design
+                  - generic [ref=e368]: "+1"
+                - generic [ref=e369]:
+                  - generic [ref=e371]: claude-code
+                  - generic [ref=e372]:
+                    - generic [ref=e373]: 👍
+                    - generic [ref=e374]: "156"
+            - link "🔗 Tailored Resume Generator 📊 productivity • composio Create ATS-optimized resumes tailored to specific job descriptions. Supports multiple formats and styling. resume job ATS +1 claude-code claude-ai 👍 189" [ref=e375] [cursor=pointer]:
+              - /url: /skills/tailored-resume-generator
+              - generic [ref=e376]:
+                - generic [ref=e377]:
+                  - generic [ref=e378]: 🔗
+                  - generic [ref=e379]:
+                    - heading "Tailored Resume Generator" [level=3] [ref=e380]
+                    - generic [ref=e381]:
+                      - generic [ref=e382]: 📊 productivity
+                      - generic [ref=e383]: •
+                      - generic [ref=e384]: composio
+                - paragraph [ref=e385]: Create ATS-optimized resumes tailored to specific job descriptions. Supports multiple formats and styling.
+                - generic [ref=e386]:
+                  - generic [ref=e387]: resume
+                  - generic [ref=e388]: job
+                  - generic [ref=e389]: ATS
+                  - generic [ref=e390]: "+1"
+                - generic [ref=e391]:
+                  - generic [ref=e392]:
+                    - generic [ref=e393]: claude-code
+                    - generic [ref=e394]: claude-ai
+                  - generic [ref=e395]:
+                    - generic [ref=e396]: 👍
+                    - generic [ref=e397]: "189"
+            - link "🍌 NanoBanana PPT Generator 🎨 creative • nanobanana AI-powered PPT image and video generation with intelligent transitions and interactive playback. PPT video AI +1 claude-code 👍 267" [ref=e398] [cursor=pointer]:
+              - /url: /skills/nanobanana-ppt-generator
+              - generic [ref=e399]:
+                - generic [ref=e400]:
+                  - generic [ref=e401]: 🍌
+                  - generic [ref=e402]:
+                    - heading "NanoBanana PPT Generator" [level=3] [ref=e403]
+                    - generic [ref=e404]:
+                      - generic [ref=e405]: 🎨 creative
+                      - generic [ref=e406]: •
+                      - generic [ref=e407]: nanobanana
+                - paragraph [ref=e408]: AI-powered PPT image and video generation with intelligent transitions and interactive playback.
+                - generic [ref=e409]:
+                  - generic [ref=e410]: PPT
+                  - generic [ref=e411]: video
+                  - generic [ref=e412]: AI
+                  - generic [ref=e413]: "+1"
+                - generic [ref=e414]:
+                  - generic [ref=e416]: claude-code
+                  - generic [ref=e417]:
+                    - generic [ref=e418]: 👍
+                    - generic [ref=e419]: "267"
+            - link "📦 Agent Identifier 💻 development • skillsmp Guide for creating autonomous subagents, defining system prompts and tools for Claude Code plugins. agent subagent autonomous +1 claude-code 👍 189" [ref=e420] [cursor=pointer]:
+              - /url: /skills/agent-identifier
+              - generic [ref=e421]:
+                - generic [ref=e422]:
+                  - generic [ref=e423]: 📦
+                  - generic [ref=e424]:
+                    - heading "Agent Identifier" [level=3] [ref=e425]
+                    - generic [ref=e426]:
+                      - generic [ref=e427]: 💻 development
+                      - generic [ref=e428]: •
+                      - generic [ref=e429]: skillsmp
+                - paragraph [ref=e430]: Guide for creating autonomous subagents, defining system prompts and tools for Claude Code plugins.
+                - generic [ref=e431]:
+                  - generic [ref=e432]: agent
+                  - generic [ref=e433]: subagent
+                  - generic [ref=e434]: autonomous
+                  - generic [ref=e435]: "+1"
+                - generic [ref=e436]:
+                  - generic [ref=e438]: claude-code
+                  - generic [ref=e439]:
+                    - generic [ref=e440]: 👍
+                    - generic [ref=e441]: "189"
+            - link "📦 MCP Integration 💻 development • skillsmp Integrating Model Context Protocol (MCP) servers (stdio, SSE) into Claude Code plugins. MCP protocol integration +1 claude-code 👍 156" [ref=e442] [cursor=pointer]:
+              - /url: /skills/mcp-integration
+              - generic [ref=e443]:
+                - generic [ref=e444]:
+                  - generic [ref=e445]: 📦
+                  - generic [ref=e446]:
+                    - heading "MCP Integration" [level=3] [ref=e447]
+                    - generic [ref=e448]:
+                      - generic [ref=e449]: 💻 development
+                      - generic [ref=e450]: •
+                      - generic [ref=e451]: skillsmp
+                - paragraph [ref=e452]: Integrating Model Context Protocol (MCP) servers (stdio, SSE) into Claude Code plugins.
+                - generic [ref=e453]:
+                  - generic [ref=e454]: MCP
+                  - generic [ref=e455]: protocol
+                  - generic [ref=e456]: integration
+                  - generic [ref=e457]: "+1"
+                - generic [ref=e458]:
+                  - generic [ref=e460]: claude-code
+                  - generic [ref=e461]:
+                    - generic [ref=e462]: 👍
+                    - generic [ref=e463]: "156"
+            - link "📦 Skill Writer ⚙️ meta • skillsmp Step-by-step guide for authoring new Agent Skills for Claude Code following .SKILL.md standard. skill writing authoring +1 claude-code 👍 201" [ref=e464] [cursor=pointer]:
+              - /url: /skills/skill-writer
+              - generic [ref=e465]:
+                - generic [ref=e466]:
+                  - generic [ref=e467]: 📦
+                  - generic [ref=e468]:
+                    - heading "Skill Writer" [level=3] [ref=e469]
+                    - generic [ref=e470]:
+                      - generic [ref=e471]: ⚙️ meta
+                      - generic [ref=e472]: •
+                      - generic [ref=e473]: skillsmp
+                - paragraph [ref=e474]: Step-by-step guide for authoring new Agent Skills for Claude Code following .SKILL.md standard.
+                - generic [ref=e475]:
+                  - generic [ref=e476]: skill
+                  - generic [ref=e477]: writing
+                  - generic [ref=e478]: authoring
+                  - generic [ref=e479]: "+1"
+                - generic [ref=e480]:
+                  - generic [ref=e482]: claude-code
+                  - generic [ref=e483]:
+                    - generic [ref=e484]: 👍
+                    - generic [ref=e485]: "201"
+            - link "📦 Hook Development 💻 development • skillsmp Implementing Pre/PostToolUse hooks to validate or automate agent actions in Claude Code. hooks validation automation +1 claude-code 👍 134" [ref=e486] [cursor=pointer]:
+              - /url: /skills/hook-development
+              - generic [ref=e487]:
+                - generic [ref=e488]:
+                  - generic [ref=e489]: 📦
+                  - generic [ref=e490]:
+                    - heading "Hook Development" [level=3] [ref=e491]
+                    - generic [ref=e492]:
+                      - generic [ref=e493]: 💻 development
+                      - generic [ref=e494]: •
+                      - generic [ref=e495]: skillsmp
+                - paragraph [ref=e496]: Implementing Pre/PostToolUse hooks to validate or automate agent actions in Claude Code.
+                - generic [ref=e497]:
+                  - generic [ref=e498]: hooks
+                  - generic [ref=e499]: validation
+                  - generic [ref=e500]: automation
+                  - generic [ref=e501]: "+1"
+                - generic [ref=e502]:
+                  - generic [ref=e504]: claude-code
+                  - generic [ref=e505]:
+                    - generic [ref=e506]: 👍
+                    - generic [ref=e507]: "134"
+            - link "📦 Command Development 💻 development • skillsmp Creating custom slash commands with YAML frontmatter and interactivity for Claude Code. commands slash YAML +1 claude-code 👍 145" [ref=e508] [cursor=pointer]:
+              - /url: /skills/command-development
+              - generic [ref=e509]:
+                - generic [ref=e510]:
+                  - generic [ref=e511]: 📦
+                  - generic [ref=e512]:
+                    - heading "Command Development" [level=3] [ref=e513]
+                    - generic [ref=e514]:
+                      - generic [ref=e515]: 💻 development
+                      - generic [ref=e516]: •
+                      - generic [ref=e517]: skillsmp
+                - paragraph [ref=e518]: Creating custom slash commands with YAML frontmatter and interactivity for Claude Code.
+                - generic [ref=e519]:
+                  - generic [ref=e520]: commands
+                  - generic [ref=e521]: slash
+                  - generic [ref=e522]: YAML
+                  - generic [ref=e523]: "+1"
+                - generic [ref=e524]:
+                  - generic [ref=e526]: claude-code
+                  - generic [ref=e527]:
+                    - generic [ref=e528]: 👍
+                    - generic [ref=e529]: "145"
+            - link "📦 PyTorch Docstring 💻 development • skillsmp Writing standardized docstrings following PyTorch engineering conventions. docstring PyTorch documentation +1 claude-code 👍 98" [ref=e530] [cursor=pointer]:
+              - /url: /skills/pytorch-docstring
+              - generic [ref=e531]:
+                - generic [ref=e532]:
+                  - generic [ref=e533]: 📦
+                  - generic [ref=e534]:
+                    - heading "PyTorch Docstring" [level=3] [ref=e535]
+                    - generic [ref=e536]:
+                      - generic [ref=e537]: 💻 development
+                      - generic [ref=e538]: •
+                      - generic [ref=e539]: skillsmp
+                - paragraph [ref=e540]: Writing standardized docstrings following PyTorch engineering conventions.
+                - generic [ref=e541]:
+                  - generic [ref=e542]: docstring
+                  - generic [ref=e543]: PyTorch
+                  - generic [ref=e544]: documentation
+                  - generic [ref=e545]: "+1"
+                - generic [ref=e546]:
+                  - generic [ref=e548]: claude-code
+                  - generic [ref=e549]:
+                    - generic [ref=e550]: 👍
+                    - generic [ref=e551]: "98"
+            - link "📊 10-K Financial Extraction 📈 benchmark • skillsbench Extract financial metrics like Net Sales from complex PDF 10-K reports. A benchmark for document processing. PDF financial extraction +1 claude-code codex 👍 178" [ref=e552] [cursor=pointer]:
+              - /url: /skills/10k-extraction
+              - generic [ref=e553]:
+                - generic [ref=e554]:
+                  - generic [ref=e555]: 📊
+                  - generic [ref=e556]:
+                    - heading "10-K Financial Extraction" [level=3] [ref=e557]
+                    - generic [ref=e558]:
+                      - generic [ref=e559]: 📈 benchmark
+                      - generic [ref=e560]: •
+                      - generic [ref=e561]: skillsbench
+                - paragraph [ref=e562]: Extract financial metrics like Net Sales from complex PDF 10-K reports. A benchmark for document processing.
+                - generic [ref=e563]:
+                  - generic [ref=e564]: PDF
+                  - generic [ref=e565]: financial
+                  - generic [ref=e566]: extraction
+                  - generic [ref=e567]: "+1"
+                - generic [ref=e568]:
+                  - generic [ref=e569]:
+                    - generic [ref=e570]: claude-code
+                    - generic [ref=e571]: codex
+                  - generic [ref=e572]:
+                    - generic [ref=e573]: 👍
+                    - generic [ref=e574]: "178"
+            - link "📊 Lean4 Proof Assistant 📈 benchmark • skillsbench Finalize mathematical proofs using the Lean 4 theorem prover. Tests formal reasoning capabilities. formal-method lean4 proof +1 claude-code 👍 156" [ref=e575] [cursor=pointer]:
+              - /url: /skills/lean4-proof
+              - generic [ref=e576]:
+                - generic [ref=e577]:
+                  - generic [ref=e578]: 📊
+                  - generic [ref=e579]:
+                    - heading "Lean4 Proof Assistant" [level=3] [ref=e580]
+                    - generic [ref=e581]:
+                      - generic [ref=e582]: 📈 benchmark
+                      - generic [ref=e583]: •
+                      - generic [ref=e584]: skillsbench
+                - paragraph [ref=e585]: Finalize mathematical proofs using the Lean 4 theorem prover. Tests formal reasoning capabilities.
+                - generic [ref=e586]:
+                  - generic [ref=e587]: formal-method
+                  - generic [ref=e588]: lean4
+                  - generic [ref=e589]: proof
+                  - generic [ref=e590]: "+1"
+                - generic [ref=e591]:
+                  - generic [ref=e593]: claude-code
+                  - generic [ref=e594]:
+                    - generic [ref=e595]: 👍
+                    - generic [ref=e596]: "156"
+            - link "📊 Protein Expression Analysis 📈 benchmark • skillsbench Analyze proteomics data from Excel sheets for cancer cell line research. Bioinformatics benchmark. proteomics bioinformatics xlsx +1 claude-code 👍 134" [ref=e597] [cursor=pointer]:
+              - /url: /skills/protein-analysis
+              - generic [ref=e598]:
+                - generic [ref=e599]:
+                  - generic [ref=e600]: 📊
+                  - generic [ref=e601]:
+                    - heading "Protein Expression Analysis" [level=3] [ref=e602]
+                    - generic [ref=e603]:
+                      - generic [ref=e604]: 📈 benchmark
+                      - generic [ref=e605]: •
+                      - generic [ref=e606]: skillsbench
+                - paragraph [ref=e607]: Analyze proteomics data from Excel sheets for cancer cell line research. Bioinformatics benchmark.
+                - generic [ref=e608]:
+                  - generic [ref=e609]: proteomics
+                  - generic [ref=e610]: bioinformatics
+                  - generic [ref=e611]: xlsx
+                  - generic [ref=e612]: "+1"
+                - generic [ref=e613]:
+                  - generic [ref=e615]: claude-code
+                  - generic [ref=e616]:
+                    - generic [ref=e617]: 👍
+                    - generic [ref=e618]: "134"
+            - link "📊 GitHub Repo Analytics 📈 benchmark • skillsbench Generate community pulse write-ups and analytics for GitHub repositories using gh-cli. github analytics devops +1 claude-code 👍 189" [ref=e619] [cursor=pointer]:
+              - /url: /skills/gh-repo-analytics
+              - generic [ref=e620]:
+                - generic [ref=e621]:
+                  - generic [ref=e622]: 📊
+                  - generic [ref=e623]:
+                    - heading "GitHub Repo Analytics" [level=3] [ref=e624]
+                    - generic [ref=e625]:
+                      - generic [ref=e626]: 📈 benchmark
+                      - generic [ref=e627]: •
+                      - generic [ref=e628]: skillsbench
+                - paragraph [ref=e629]: Generate community pulse write-ups and analytics for GitHub repositories using gh-cli.
+                - generic [ref=e630]:
+                  - generic [ref=e631]: github
+                  - generic [ref=e632]: analytics
+                  - generic [ref=e633]: devops
+                  - generic [ref=e634]: "+1"
+                - generic [ref=e635]:
+                  - generic [ref=e637]: claude-code
+                  - generic [ref=e638]:
+                    - generic [ref=e639]: 👍
+                    - generic [ref=e640]: "189"
+            - link "📊 Image OCR Statistics 📈 benchmark • skillsbench Perform OCR on images and run statistical analysis on extracted data. Multi-modal benchmark. OCR image statistics +1 claude-code 👍 145" [ref=e641] [cursor=pointer]:
+              - /url: /skills/jpg-ocr-stat
+              - generic [ref=e642]:
+                - generic [ref=e643]:
+                  - generic [ref=e644]: 📊
+                  - generic [ref=e645]:
+                    - heading "Image OCR Statistics" [level=3] [ref=e646]
+                    - generic [ref=e647]:
+                      - generic [ref=e648]: 📈 benchmark
+                      - generic [ref=e649]: •
+                      - generic [ref=e650]: skillsbench
+                - paragraph [ref=e651]: Perform OCR on images and run statistical analysis on extracted data. Multi-modal benchmark.
+                - generic [ref=e652]:
+                  - generic [ref=e653]: OCR
+                  - generic [ref=e654]: image
+                  - generic [ref=e655]: statistics
+                  - generic [ref=e656]: "+1"
+                - generic [ref=e657]:
+                  - generic [ref=e659]: claude-code
+                  - generic [ref=e660]:
+                    - generic [ref=e661]: 👍
+                    - generic [ref=e662]: "145"
+            - link "📊 Offer Letter Generator 📈 benchmark • skillsbench Automate the generation of HR offer letters using Word/Docx templates. Document automation benchmark. docx word template +1 claude-code 👍 167" [ref=e663] [cursor=pointer]:
+              - /url: /skills/offer-letter-generator
+              - generic [ref=e664]:
+                - generic [ref=e665]:
+                  - generic [ref=e666]: 📊
+                  - generic [ref=e667]:
+                    - heading "Offer Letter Generator" [level=3] [ref=e668]
+                    - generic [ref=e669]:
+                      - generic [ref=e670]: 📈 benchmark
+                      - generic [ref=e671]: •
+                      - generic [ref=e672]: skillsbench
+                - paragraph [ref=e673]: Automate the generation of HR offer letters using Word/Docx templates. Document automation benchmark.
+                - generic [ref=e674]:
+                  - generic [ref=e675]: docx
+                  - generic [ref=e676]: word
+                  - generic [ref=e677]: template
+                  - generic [ref=e678]: "+1"
+                - generic [ref=e679]:
+                  - generic [ref=e681]: claude-code
+                  - generic [ref=e682]:
+                    - generic [ref=e683]: 👍
+                    - generic [ref=e684]: "167"
+            - link "📊 PDF Excel Diff 📈 benchmark • skillsbench Identify discrepancies between PDF archived records and Excel databases. Data comparison benchmark. PDF excel diff +1 claude-code 👍 156" [ref=e685] [cursor=pointer]:
+              - /url: /skills/pdf-excel-diff
+              - generic [ref=e686]:
+                - generic [ref=e687]:
+                  - generic [ref=e688]: 📊
+                  - generic [ref=e689]:
+                    - heading "PDF Excel Diff" [level=3] [ref=e690]
+                    - generic [ref=e691]:
+                      - generic [ref=e692]: 📈 benchmark
+                      - generic [ref=e693]: •
+                      - generic [ref=e694]: skillsbench
+                - paragraph [ref=e695]: Identify discrepancies between PDF archived records and Excel databases. Data comparison benchmark.
+                - generic [ref=e696]:
+                  - generic [ref=e697]: PDF
+                  - generic [ref=e698]: excel
+                  - generic [ref=e699]: diff
+                  - generic [ref=e700]: "+1"
+                - generic [ref=e701]:
+                  - generic [ref=e703]: claude-code
+                  - generic [ref=e704]:
+                    - generic [ref=e705]: 👍
+                    - generic [ref=e706]: "156"
+            - link "📊 Quantum Numerical Simulation 📈 benchmark • skillsbench Simulate open Dicke models and steady-state quantum systems. Quantum physics benchmark. quantum simulation physics +1 claude-code 👍 123" [ref=e707] [cursor=pointer]:
+              - /url: /skills/quantum-simulation
+              - generic [ref=e708]:
+                - generic [ref=e709]:
+                  - generic [ref=e710]: 📊
+                  - generic [ref=e711]:
+                    - heading "Quantum Numerical Simulation" [level=3] [ref=e712]
+                    - generic [ref=e713]:
+                      - generic [ref=e714]: 📈 benchmark
+                      - generic [ref=e715]: •
+                      - generic [ref=e716]: skillsbench
+                - paragraph [ref=e717]: Simulate open Dicke models and steady-state quantum systems. Quantum physics benchmark.
+                - generic [ref=e718]:
+                  - generic [ref=e719]: quantum
+                  - generic [ref=e720]: simulation
+                  - generic [ref=e721]: physics
+                  - generic [ref=e722]: "+1"
+                - generic [ref=e723]:
+                  - generic [ref=e725]: claude-code
+                  - generic [ref=e726]:
+                    - generic [ref=e727]: 👍
+                    - generic [ref=e728]: "123"
+            - link "📊 Grid Dispatch Operator 📈 benchmark • skillsbench Solve for economically efficient power network dispatch. Energy optimization benchmark. energy optimization power-flow +1 claude-code 👍 112" [ref=e729] [cursor=pointer]:
+              - /url: /skills/grid-dispatch
+              - generic [ref=e730]:
+                - generic [ref=e731]:
+                  - generic [ref=e732]: 📊
+                  - generic [ref=e733]:
+                    - heading "Grid Dispatch Operator" [level=3] [ref=e734]
+                    - generic [ref=e735]:
+                      - generic [ref=e736]: 📈 benchmark
+                      - generic [ref=e737]: •
+                      - generic [ref=e738]: skillsbench
+                - paragraph [ref=e739]: Solve for economically efficient power network dispatch. Energy optimization benchmark.
+                - generic [ref=e740]:
+                  - generic [ref=e741]: energy
+                  - generic [ref=e742]: optimization
+                  - generic [ref=e743]: power-flow
+                  - generic [ref=e744]: "+1"
+                - generic [ref=e745]:
+                  - generic [ref=e747]: claude-code
+                  - generic [ref=e748]:
+                    - generic [ref=e749]: 👍
+                    - generic [ref=e750]: "112"
+            - link "📊 Travel Planning 📈 benchmark • skillsbench Construct constrained travel itineraries with budget, time, and preference constraints. travel planning constraints +1 claude-code 👍 198" [ref=e751] [cursor=pointer]:
+              - /url: /skills/travel-planning
+              - generic [ref=e752]:
+                - generic [ref=e753]:
+                  - generic [ref=e754]: 📊
+                  - generic [ref=e755]:
+                    - heading "Travel Planning" [level=3] [ref=e756]
+                    - generic [ref=e757]:
+                      - generic [ref=e758]: 📈 benchmark
+                      - generic [ref=e759]: •
+                      - generic [ref=e760]: skillsbench
+                - paragraph [ref=e761]: Construct constrained travel itineraries with budget, time, and preference constraints.
+                - generic [ref=e762]:
+                  - generic [ref=e763]: travel
+                  - generic [ref=e764]: planning
+                  - generic [ref=e765]: constraints
+                  - generic [ref=e766]: "+1"
+                - generic [ref=e767]:
+                  - generic [ref=e769]: claude-code
+                  - generic [ref=e770]:
+                    - generic [ref=e771]: 👍
+                    - generic [ref=e772]: "198"
+            - link "📊 VirtualHome Agent 📈 benchmark • skillsbench Act as an embodied agent to plan household tasks in a virtual environment. Robotics benchmark. robotics planning embodied-ai +1 claude-code 👍 145" [ref=e773] [cursor=pointer]:
+              - /url: /skills/virtualhome-agent
+              - generic [ref=e774]:
+                - generic [ref=e775]:
+                  - generic [ref=e776]: 📊
+                  - generic [ref=e777]:
+                    - heading "VirtualHome Agent" [level=3] [ref=e778]
+                    - generic [ref=e779]:
+                      - generic [ref=e780]: 📈 benchmark
+                      - generic [ref=e781]: •
+                      - generic [ref=e782]: skillsbench
+                - paragraph [ref=e783]: Act as an embodied agent to plan household tasks in a virtual environment. Robotics benchmark.
+                - generic [ref=e784]:
+                  - generic [ref=e785]: robotics
+                  - generic [ref=e786]: planning
+                  - generic [ref=e787]: embodied-ai
+                  - generic [ref=e788]: "+1"
+                - generic [ref=e789]:
+                  - generic [ref=e791]: claude-code
+                  - generic [ref=e792]:
+                    - generic [ref=e793]: 👍
+                    - generic [ref=e794]: "145"
+            - link "📊 Manufacturing FJSP 📈 benchmark • skillsbench Solve Flexible Job Shop Scheduling optimization problems. Manufacturing benchmark. manufacturing optimization scheduling +1 claude-code 👍 98" [ref=e795] [cursor=pointer]:
+              - /url: /skills/manufacturing-fjsp
+              - generic [ref=e796]:
+                - generic [ref=e797]:
+                  - generic [ref=e798]: 📊
+                  - generic [ref=e799]:
+                    - heading "Manufacturing FJSP" [level=3] [ref=e800]
+                    - generic [ref=e801]:
+                      - generic [ref=e802]: 📈 benchmark
+                      - generic [ref=e803]: •
+                      - generic [ref=e804]: skillsbench
+                - paragraph [ref=e805]: Solve Flexible Job Shop Scheduling optimization problems. Manufacturing benchmark.
+                - generic [ref=e806]:
+                  - generic [ref=e807]: manufacturing
+                  - generic [ref=e808]: optimization
+                  - generic [ref=e809]: scheduling
+                  - generic [ref=e810]: "+1"
+                - generic [ref=e811]:
+                  - generic [ref=e813]: claude-code
+                  - generic [ref=e814]:
+                    - generic [ref=e815]: 👍
+                    - generic [ref=e816]: "98"
+            - link "📊 Exoplanet Detection 📈 benchmark • skillsbench Detect exoplanet periods from TESS light curve astronomical data. Astronomy benchmark. astronomy science timeseries +1 claude-code 👍 167" [ref=e817] [cursor=pointer]:
+              - /url: /skills/exoplanet-detection
+              - generic [ref=e818]:
+                - generic [ref=e819]:
+                  - generic [ref=e820]: 📊
+                  - generic [ref=e821]:
+                    - heading "Exoplanet Detection" [level=3] [ref=e822]
+                    - generic [ref=e823]:
+                      - generic [ref=e824]: 📈 benchmark
+                      - generic [ref=e825]: •
+                      - generic [ref=e826]: skillsbench
+                - paragraph [ref=e827]: Detect exoplanet periods from TESS light curve astronomical data. Astronomy benchmark.
+                - generic [ref=e828]:
+                  - generic [ref=e829]: astronomy
+                  - generic [ref=e830]: science
+                  - generic [ref=e831]: timeseries
+                  - generic [ref=e832]: "+1"
+                - generic [ref=e833]:
+                  - generic [ref=e835]: claude-code
+                  - generic [ref=e836]:
+                    - generic [ref=e837]: 👍
+                    - generic [ref=e838]: "167"
+            - link "📊 Python Fuzzing Setup 📈 benchmark • skillsbench Configure continuous fuzzing environments for Python projects. Security benchmark. security fuzzing python +1 claude-code 👍 134" [ref=e839] [cursor=pointer]:
+              - /url: /skills/setup-fuzzing-py
+              - generic [ref=e840]:
+                - generic [ref=e841]:
+                  - generic [ref=e842]: 📊
+                  - generic [ref=e843]:
+                    - heading "Python Fuzzing Setup" [level=3] [ref=e844]
+                    - generic [ref=e845]:
+                      - generic [ref=e846]: 📈 benchmark
+                      - generic [ref=e847]: •
+                      - generic [ref=e848]: skillsbench
+                - paragraph [ref=e849]: Configure continuous fuzzing environments for Python projects. Security benchmark.
+                - generic [ref=e850]:
+                  - generic [ref=e851]: security
+                  - generic [ref=e852]: fuzzing
+                  - generic [ref=e853]: python
+                  - generic [ref=e854]: "+1"
+                - generic [ref=e855]:
+                  - generic [ref=e857]: claude-code
+                  - generic [ref=e858]:
+                    - generic [ref=e859]: 👍
+                    - generic [ref=e860]: "134"
+        - generic [ref=e862]:
+          - generic [ref=e863]: 🎯
+          - heading "About SkillsHunt" [level=2] [ref=e864]
+          - paragraph [ref=e865]:
+            - text: SkillsHunt is the
+            - strong [ref=e866]: Product Hunt for AI Agent Skills
+            - text: . We help developers discover, share, and explore the best skills for Claude Code, Codex, OpenCode, and other AI coding assistants.
+          - generic [ref=e867]:
+            - generic [ref=e868]:
+              - generic [ref=e869]: 🔍
+              - heading "Discover" [level=3] [ref=e870]
+              - paragraph [ref=e871]: Find the perfect skill for your AI workflow from our curated collection.
+            - generic [ref=e872]:
+              - generic [ref=e873]: 🤝
+              - heading "Share" [level=3] [ref=e874]
+              - paragraph [ref=e875]: Submit your own skills and grow with the community.
+            - generic [ref=e876]:
+              - generic [ref=e877]: 📈
+              - heading "Benchmark" [level=3] [ref=e878]
+              - paragraph [ref=e879]: Test agent capabilities with our curated benchmark tasks.
+          - generic [ref=e880]:
+            - link "⭐ Star on GitHub" [ref=e881] [cursor=pointer]:
+              - /url: https://github.com/Coowoolf/skillshunt
+            - link "📊 SkillsBench Partnership" [ref=e882] [cursor=pointer]:
+              - /url: https://skillsbench.ai
+    - contentinfo [ref=e883]:
+      - generic [ref=e885]:
+        - generic [ref=e886]:
+          - generic [ref=e887]: 🎯
+          - generic [ref=e888]:
+            - heading "SkillsHunt" [level=3] [ref=e889]
+            - paragraph [ref=e890]: Discover and share AI Agent Skills
+        - generic [ref=e891]:
+          - link "GitHub" [ref=e892] [cursor=pointer]:
+            - /url: https://github.com
+          - link "Anthropic Skills" [ref=e893] [cursor=pointer]:
+            - /url: https://anthropic.com
+          - link "Superpowers" [ref=e894] [cursor=pointer]:
+            - /url: https://github.com/obra/superpowers
+        - generic [ref=e895]: © 2026 SkillsHunt. Built with 🎯 using Next.js
+  - button "Open Next.js Dev Tools" [ref=e901] [cursor=pointer]:
+    - img [ref=e902]
+  - alert [ref=e905]
+```
