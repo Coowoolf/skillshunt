@@ -1,65 +1,125 @@
-import Image from "next/image";
+'use client';
+
+import { useState, useMemo } from 'react';
+import { SkillCard } from '@/components/ui/SkillCard';
+import { SearchBar } from '@/components/ui/SearchBar';
+import { CategoryFilter } from '@/components/ui/CategoryFilter';
+import { skills, categories, getSkillsByCategory, searchSkills } from '@/data/skills';
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('all');
+
+  const filteredSkills = useMemo(() => {
+    let result = getSkillsByCategory(selectedCategory);
+    if (searchQuery.trim()) {
+      const searchResults = searchSkills(searchQuery);
+      result = result.filter(skill => searchResults.includes(skill));
+    }
+    return result;
+  }, [searchQuery, selectedCategory]);
+
+  const totalSkills = skills.length;
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="container-main py-12">
+      {/* Hero Section */}
+      <section className="text-center mb-16">
+        <h1 className="heading-xl mb-4">
+          Discover <span className="gradient-text-purple">AI Agent Skills</span>
+        </h1>
+        <p className="text-body text-lg max-w-2xl mx-auto mb-8">
+          Explore {totalSkills}+ skills from Anthropic, Obra Superpowers, Composio, and the community.
+          Find the perfect skill for your AI coding workflow.
+        </p>
+
+        {/* Search Bar */}
+        <div className="max-w-xl mx-auto mb-8">
+          <SearchBar
+            value={searchQuery}
+            onChange={setSearchQuery}
+            placeholder="Search skills by name, description, or tags..."
+          />
+        </div>
+
+        {/* Source Stats */}
+        <div className="flex flex-wrap justify-center gap-4">
+          <div className="card px-6 py-3 flex items-center gap-3">
+            <span className="w-8 h-8 gradient-blue rounded-lg flex items-center justify-center text-white">🤖</span>
+            <div className="text-left">
+              <div className="font-bold text-[var(--text-primary)]">Anthropic</div>
+              <div className="text-xs text-[var(--text-muted)]">Official Skills</div>
+            </div>
+          </div>
+          <div className="card px-6 py-3 flex items-center gap-3">
+            <span className="w-8 h-8 gradient-purple rounded-lg flex items-center justify-center text-white">⚡</span>
+            <div className="text-left">
+              <div className="font-bold text-[var(--text-primary)]">Superpowers</div>
+              <div className="text-xs text-[var(--text-muted)]">Development Workflow</div>
+            </div>
+          </div>
+          <div className="card px-6 py-3 flex items-center gap-3">
+            <span className="w-8 h-8 gradient-pink rounded-lg flex items-center justify-center text-white">🔗</span>
+            <div className="text-left">
+              <div className="font-bold text-[var(--text-primary)]">Composio</div>
+              <div className="text-xs text-[var(--text-muted)]">Awesome Skills</div>
+            </div>
+          </div>
+          <div className="card px-6 py-3 flex items-center gap-3">
+            <span className="w-8 h-8 gradient-orange rounded-lg flex items-center justify-center text-white">👥</span>
+            <div className="text-left">
+              <div className="font-bold text-[var(--text-primary)]">Community</div>
+              <div className="text-xs text-[var(--text-muted)]">User Created</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Category Filter */}
+      <section id="categories" className="mb-8">
+        <CategoryFilter
+          categories={categories}
+          selected={selectedCategory}
+          onChange={setSelectedCategory}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
+
+      {/* Skills Grid */}
+      <section>
+        {filteredSkills.length > 0 ? (
+          <>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="heading-md">
+                {selectedCategory === 'all' ? 'All Skills' : categories.find(c => c.id === selectedCategory)?.name}
+                <span className="text-[var(--text-muted)] font-normal ml-2">
+                  ({filteredSkills.length})
+                </span>
+              </h2>
+              <div className="flex items-center gap-2 text-caption">
+                <span>Sort by:</span>
+                <select className="bg-white border-none rounded-lg px-3 py-2 text-sm shadow-[var(--shadow-soft)]">
+                  <option>Most Popular</option>
+                  <option>Newest</option>
+                  <option>Name A-Z</option>
+                </select>
+              </div>
+            </div>
+            <div className="skills-grid">
+              {filteredSkills.map((skill) => (
+                <SkillCard key={skill.id} skill={skill} />
+              ))}
+            </div>
+          </>
+        ) : (
+          <div className="text-center py-16">
+            <div className="text-6xl mb-4">🔍</div>
+            <h3 className="heading-md mb-2">No skills found</h3>
+            <p className="text-body">
+              Try adjusting your search or filter criteria
+            </p>
+          </div>
+        )}
+      </section>
     </div>
   );
 }
