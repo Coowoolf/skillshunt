@@ -13,7 +13,7 @@
 
 **Discover, share, and explore AI Agent Skills for Claude Code, Codex, OpenCode and more.**
 
-[🌐 Visit SkillsHunt](https://skillshunt.org) · [📊 SkillsBench Partnership](https://skillsbench.ai) · [🐛 Report Bug](https://github.com/Coowoolf/skillshunt/issues)
+[🌐 Visit SkillsHunt](https://skillshunt.org) · [🐛 Report Bug](https://github.com/Coowoolf/skillshunt/issues)
 
 </div>
 
@@ -31,9 +31,8 @@ AI coding agents are everywhere—Claude Code, Cursor, Windsurf, OpenCode, Codex
 
 **SkillsHunt solves this by providing:**
 
-- 🔍 **One Place to Discover** – 56+ curated skills from Anthropic, Obra Superpowers, Composio, SkillsMP, GitHub, and the community
+- 🔍 **One Place to Discover** – 80+ curated skills from Anthropic, Obra Superpowers, Composio, GitHub, and the community
 - 🌍 **50+ Languages** – Full internationalization with auto-detection
-- 📈 **Benchmark Tasks** – Real-world evaluation tasks from SkillsBench to test agent capabilities
 - 🤝 **Community-Driven** – Vote, submit, and share skills with fellow developers
 - ⚡ **Zero Friction** – Copy install commands, view GitHub sources, instant deployment
 
@@ -63,10 +62,8 @@ SkillsHunt aggregates skills from multiple sources:
 | 🤖 **Anthropic** | 6 | Official Claude Code skills |
 | ⚡ **Obra Superpowers** | 5 | Development workflow skills |
 | 🔗 **Composio** | 4 | Awesome skills collection |
-| 📦 **SkillsMP** | 10+ | Community marketplace |
-| 📊 **SkillsBench** | 14 | Benchmark evaluation tasks |
-| 🐙 **GitHub** | 10+ | High-star repos (100+ stars) |
-| 👥 **Community** | 5+ | User submissions |
+| 🐙 **GitHub** | 20+ | High-star repos (100+ stars) |
+| 👥 **Community** | 40+ | User submissions |
 
 ---
 
@@ -105,8 +102,6 @@ Plus 40+ more languages including Indonesian, Vietnamese, Thai, Turkish, Italian
 
 ## 🔗 Related Projects
 
-- [SkillsBench](https://skillsbench.ai) – Benchmark evaluation framework for AI agent skills
-- [SkillsMP](https://skillsmp.com) – Agent Skills Marketplace
 - [Obra Superpowers](https://github.com/obra/superpowers) – Development workflow skills
 - [Anthropic Skills](https://github.com/anthropics/skills) – Official Claude Code skills
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) – MCP-based skills (14k+ stars)
@@ -116,7 +111,7 @@ Plus 40+ more languages including Indonesian, Vietnamese, Thai, Turkish, Italian
 ## 📝 Roadmap
 
 - [x] 50+ language internationalization
-- [x] 56+ curated skills
+- [x] 80+ curated skills
 - [ ] GitHub Skills Auto-Scraper (100+ stars threshold)
 - [ ] Conversational AI category
 - [ ] Product Manager category
