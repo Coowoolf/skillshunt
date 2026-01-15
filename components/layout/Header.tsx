@@ -21,8 +21,8 @@ export function Header() {
                             <Image
                                 src="/logo.jpg"
                                 alt="SkillsHunt Mascot"
-                                width={44}
-                                height={44}
+                                width={56}
+                                height={56}
                                 className="rounded-xl"
                             />
                             <div>
