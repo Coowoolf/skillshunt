@@ -1,0 +1,42 @@
+{
+    "common": {
+        "skillsHunt": "SkillsHunt",
+        "discoverSkills": "Откройте навыки ИИ-агентов",
+        "tagline": "Product Hunt для навыков ИИ-агентов"
+    },
+    "nav": {
+        "explore": "Исследовать",
+        "categories": "Категории",
+        "about": "О нас",
+        "submitSkill": "Добавить навык"
+    },
+    "home": {
+        "heroTitle": "Откройте",
+        "heroHighlight": "Навыки ИИ-агентов",
+        "heroSubtitle": "Исследуйте более {count} навыков от Anthropic, Obra Superpowers, Composio и сообщества.",
+        "searchPlaceholder": "Поиск по названию, описанию или тегам...",
+        "allSkills": "Все навыки",
+        "sortBy": "Сортировка:",
+        "sortPopular": "Популярные",
+        "sortNewest": "Новые",
+        "sortName": "Имя А-Я"
+    },
+    "categories": {
+        "all": "Все навыки",
+        "development": "Разработка",
+        "document": "Документы",
+        "testing": "Тестирование",
+        "debugging": "Отладка",
+        "collaboration": "Совместная работа",
+        "creative": "Креатив",
+        "productivity": "Продуктивность",
+        "meta": "Мета",
+        "benchmark": "Бенчмарки",
+        "conversational-ai": "Разговорный ИИ",
+        "product-manager": "Продакт-менеджер"
+    },
+    "language": {
+        "select": "Язык",
+        "current": "Русский"
+    }
+}

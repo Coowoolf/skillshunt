@@ -1,0 +1,42 @@
+{
+    "common": {
+        "skillsHunt": "स्किल्सहंट",
+        "discoverSkills": "AI एजेंट स्किल्स खोजें",
+        "tagline": "AI एजेंट स्किल्स के लिए Product Hunt"
+    },
+    "nav": {
+        "explore": "एक्सप्लोर",
+        "categories": "श्रेणियां",
+        "about": "के बारे में",
+        "submitSkill": "स्किल जोड़ें"
+    },
+    "home": {
+        "heroTitle": "खोजें",
+        "heroHighlight": "AI एजेंट स्किल्स",
+        "heroSubtitle": "Anthropic, Obra Superpowers, Composio और समुदाय से {count}+ स्किल्स का अन्वेषण करें।",
+        "searchPlaceholder": "नाम, विवरण या टैग द्वारा स्किल्स खोजें...",
+        "allSkills": "सभी स्किल्स",
+        "sortBy": "क्रमबद्ध करें:",
+        "sortPopular": "सबसे लोकप्रिय",
+        "sortNewest": "नवीनतम",
+        "sortName": "नाम A-Z"
+    },
+    "categories": {
+        "all": "सभी स्किल्स",
+        "development": "विकास",
+        "document": "दस्तावेज़",
+        "testing": "परीक्षण",
+        "debugging": "डीबगिंग",
+        "collaboration": "सहयोग",
+        "creative": "क्रिएटिव",
+        "productivity": "उत्पादकता",
+        "meta": "मेटा",
+        "benchmark": "बेंचमार्क",
+        "conversational-ai": "संवादात्मक AI",
+        "product-manager": "प्रोडक्ट मैनेजर"
+    },
+    "language": {
+        "select": "भाषा",
+        "current": "हिन्दी"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "common": {
+        "skillsHunt": "سكيلز هنت",
+        "discoverSkills": "اكتشف مهارات وكلاء الذكاء الاصطناعي",
+        "tagline": "Product Hunt لمهارات وكلاء الذكاء الاصطناعي"
+    },
+    "nav": {
+        "explore": "استكشاف",
+        "categories": "الفئات",
+        "about": "حول",
+        "submitSkill": "إضافة مهارة"
+    },
+    "home": {
+        "heroTitle": "اكتشف",
+        "heroHighlight": "مهارات وكلاء الذكاء الاصطناعي",
+        "heroSubtitle": "استكشف أكثر من {count} مهارة من Anthropic و Obra Superpowers و Composio والمجتمع.",
+        "searchPlaceholder": "البحث عن المهارات بالاسم أو الوصف أو الوسوم...",
+        "allSkills": "جميع المهارات",
+        "sortBy": "ترتيب حسب:",
+        "sortPopular": "الأكثر شعبية",
+        "sortNewest": "الأحدث",
+        "sortName": "الاسم أ-ي"
+    },
+    "categories": {
+        "all": "جميع المهارات",
+        "development": "التطوير",
+        "document": "المستندات",
+        "testing": "الاختبار",
+        "debugging": "تصحيح الأخطاء",
+        "collaboration": "التعاون",
+        "creative": "الإبداع",
+        "productivity": "الإنتاجية",
+        "meta": "ميتا",
+        "benchmark": "المعايير",
+        "conversational-ai": "الذكاء الاصطناعي التحاوري",
+        "product-manager": "مدير المنتج"
+    },
+    "language": {
+        "select": "اللغة",
+        "current": "العربية"
+    }
+}

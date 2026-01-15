@@ -1,0 +1,42 @@
+{
+    "common": {
+        "skillsHunt": "스킬즈헌트",
+        "discoverSkills": "AI 에이전트 스킬 발견하기",
+        "tagline": "AI 에이전트 스킬을 위한 Product Hunt"
+    },
+    "nav": {
+        "explore": "탐색",
+        "categories": "카테고리",
+        "about": "소개",
+        "submitSkill": "스킬 제출"
+    },
+    "home": {
+        "heroTitle": "발견하세요",
+        "heroHighlight": "AI 에이전트 스킬",
+        "heroSubtitle": "Anthropic, Obra Superpowers, Composio 및 커뮤니티의 {count}개 이상의 스킬을 탐색하세요.",
+        "searchPlaceholder": "이름, 설명 또는 태그로 스킬 검색...",
+        "allSkills": "모든 스킬",
+        "sortBy": "정렬:",
+        "sortPopular": "인기순",
+        "sortNewest": "최신순",
+        "sortName": "이름 A-Z"
+    },
+    "categories": {
+        "all": "모든 스킬",
+        "development": "개발",
+        "document": "문서",
+        "testing": "테스트",
+        "debugging": "디버깅",
+        "collaboration": "협업",
+        "creative": "크리에이티브",
+        "productivity": "생산성",
+        "meta": "메타",
+        "benchmark": "벤치마크",
+        "conversational-ai": "대화형 AI",
+        "product-manager": "제품 관리자"
+    },
+    "language": {
+        "select": "언어",
+        "current": "한국어"
+    }
+}

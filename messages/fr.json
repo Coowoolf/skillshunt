@@ -1,0 +1,42 @@
+{
+    "common": {
+        "skillsHunt": "SkillsHunt",
+        "discoverSkills": "Découvrez les Compétences d'Agents IA",
+        "tagline": "Le Product Hunt pour les Compétences d'Agents IA"
+    },
+    "nav": {
+        "explore": "Explorer",
+        "categories": "Catégories",
+        "about": "À propos",
+        "submitSkill": "Soumettre"
+    },
+    "home": {
+        "heroTitle": "Découvrez",
+        "heroHighlight": "les Compétences d'Agents IA",
+        "heroSubtitle": "Explorez plus de {count} compétences d'Anthropic, Obra Superpowers, Composio et la communauté.",
+        "searchPlaceholder": "Rechercher par nom, description ou tags...",
+        "allSkills": "Toutes les Compétences",
+        "sortBy": "Trier par :",
+        "sortPopular": "Plus Populaires",
+        "sortNewest": "Plus Récentes",
+        "sortName": "Nom A-Z"
+    },
+    "categories": {
+        "all": "Toutes les Compétences",
+        "development": "Développement",
+        "document": "Documents",
+        "testing": "Tests",
+        "debugging": "Débogage",
+        "collaboration": "Collaboration",
+        "creative": "Créatif",
+        "productivity": "Productivité",
+        "meta": "Meta",
+        "benchmark": "Benchmarks",
+        "conversational-ai": "IA Conversationnelle",
+        "product-manager": "Chef de Produit"
+    },
+    "language": {
+        "select": "Langue",
+        "current": "Français"
+    }
+}

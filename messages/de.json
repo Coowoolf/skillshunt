@@ -1,0 +1,42 @@
+{
+    "common": {
+        "skillsHunt": "SkillsHunt",
+        "discoverSkills": "Entdecke KI-Agenten-Fähigkeiten",
+        "tagline": "Product Hunt für KI-Agenten-Fähigkeiten"
+    },
+    "nav": {
+        "explore": "Entdecken",
+        "categories": "Kategorien",
+        "about": "Über uns",
+        "submitSkill": "Fähigkeit einreichen"
+    },
+    "home": {
+        "heroTitle": "Entdecke",
+        "heroHighlight": "KI-Agenten-Fähigkeiten",
+        "heroSubtitle": "Erkunde über {count} Fähigkeiten von Anthropic, Obra Superpowers, Composio und der Community.",
+        "searchPlaceholder": "Suche nach Name, Beschreibung oder Tags...",
+        "allSkills": "Alle Fähigkeiten",
+        "sortBy": "Sortieren nach:",
+        "sortPopular": "Beliebteste",
+        "sortNewest": "Neueste",
+        "sortName": "Name A-Z"
+    },
+    "categories": {
+        "all": "Alle Fähigkeiten",
+        "development": "Entwicklung",
+        "document": "Dokumente",
+        "testing": "Testen",
+        "debugging": "Debugging",
+        "collaboration": "Zusammenarbeit",
+        "creative": "Kreativ",
+        "productivity": "Produktivität",
+        "meta": "Meta",
+        "benchmark": "Benchmarks",
+        "conversational-ai": "Konversations-KI",
+        "product-manager": "Produktmanager"
+    },
+    "language": {
+        "select": "Sprache",
+        "current": "Deutsch"
+    }
+}

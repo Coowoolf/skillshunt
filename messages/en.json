@@ -1,0 +1,97 @@
+{
+    "common": {
+        "skillsHunt": "SkillsHunt",
+        "discoverSkills": "Discover AI Agent Skills",
+        "tagline": "The Product Hunt for AI Agent Skills"
+    },
+    "nav": {
+        "explore": "Explore",
+        "categories": "Categories",
+        "about": "About",
+        "submitSkill": "Submit Skill"
+    },
+    "home": {
+        "heroTitle": "Discover",
+        "heroHighlight": "AI Agent Skills",
+        "heroSubtitle": "Explore {count}+ skills from Anthropic, Obra Superpowers, Composio, and the community. Find the perfect skill for your AI coding workflow.",
+        "searchPlaceholder": "Search skills by name, description, or tags...",
+        "allSkills": "All Skills",
+        "sortBy": "Sort by:",
+        "sortPopular": "Most Popular",
+        "sortNewest": "Newest",
+        "sortName": "Name A-Z",
+        "noSkillsFound": "No skills found matching your search.",
+        "tryDifferent": "Try a different search term or category."
+    },
+    "categories": {
+        "all": "All Skills",
+        "development": "Development",
+        "document": "Document",
+        "testing": "Testing",
+        "debugging": "Debugging",
+        "collaboration": "Collaboration",
+        "creative": "Creative",
+        "productivity": "Productivity",
+        "meta": "Meta",
+        "benchmark": "Benchmarks",
+        "conversational-ai": "Conversational AI",
+        "product-manager": "Product Manager"
+    },
+    "sources": {
+        "anthropic": "Anthropic",
+        "obra": "Superpowers",
+        "composio": "Composio",
+        "community": "Community",
+        "nanobanana": "NanoBanana",
+        "skillsmp": "SkillsMP",
+        "skillsbench": "SkillsBench"
+    },
+    "skill": {
+        "backToAll": "← Back to All Skills",
+        "source": "Source",
+        "category": "Category",
+        "platforms": "Platforms",
+        "tags": "Tags",
+        "installation": "📦 Installation",
+        "copyCommand": "Copy Command",
+        "copied": "Copied!",
+        "viewOnGitHub": "View on GitHub",
+        "upvote": "👍 Upvote",
+        "upvoted": "✅ Upvoted"
+    },
+    "submit": {
+        "title": "Submit a Skill",
+        "subtitle": "Share your AI Agent Skill with the community",
+        "skillName": "Skill Name",
+        "skillNamePlaceholder": "e.g., Database Migration Helper",
+        "description": "Description",
+        "descriptionPlaceholder": "What does your skill do?",
+        "githubUrl": "GitHub URL",
+        "githubUrlPlaceholder": "https://github.com/...",
+        "category": "Category",
+        "email": "Your Email",
+        "emailPlaceholder": "your@example.com",
+        "submitButton": "🚀 Submit Skill",
+        "success": "✅ Thanks for submitting! We'll review your skill soon."
+    },
+    "about": {
+        "title": "About SkillsHunt",
+        "description": "SkillsHunt is the Product Hunt for AI Agent Skills. We curate the best skills from Anthropic, Obra Superpowers, Composio, and the open-source community.",
+        "discover": "Discover",
+        "discoverDesc": "Find the perfect AI agent skill for your workflow",
+        "share": "Share",
+        "shareDesc": "Submit your own skills and help the community",
+        "benchmark": "Benchmark",
+        "benchmarkDesc": "Test agent capabilities with real-world tasks",
+        "starOnGitHub": "Star on GitHub",
+        "skillsBenchPartnership": "SkillsBench Partnership"
+    },
+    "footer": {
+        "copyright": "© {year} SkillsHunt. Built with 🎯 using Next.js",
+        "builtBy": "Built with ❤️ for the AI Agent community"
+    },
+    "language": {
+        "select": "Language",
+        "current": "English"
+    }
+}

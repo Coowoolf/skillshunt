@@ -1,0 +1,42 @@
+{
+    "common": {
+        "skillsHunt": "スキルズハント",
+        "discoverSkills": "AIエージェントスキルを発見",
+        "tagline": "AIエージェントスキルのProduct Hunt"
+    },
+    "nav": {
+        "explore": "探索",
+        "categories": "カテゴリ",
+        "about": "について",
+        "submitSkill": "スキルを投稿"
+    },
+    "home": {
+        "heroTitle": "発見する",
+        "heroHighlight": "AIエージェントスキル",
+        "heroSubtitle": "Anthropic、Obra Superpowers、Composio、コミュニティからの{count}以上のスキルを探索。",
+        "searchPlaceholder": "名前、説明、タグでスキルを検索...",
+        "allSkills": "すべてのスキル",
+        "sortBy": "並び替え：",
+        "sortPopular": "人気順",
+        "sortNewest": "新着順",
+        "sortName": "名前 A-Z"
+    },
+    "categories": {
+        "all": "すべてのスキル",
+        "development": "開発",
+        "document": "ドキュメント",
+        "testing": "テスト",
+        "debugging": "デバッグ",
+        "collaboration": "コラボレーション",
+        "creative": "クリエイティブ",
+        "productivity": "生産性",
+        "meta": "メタ",
+        "benchmark": "ベンチマーク",
+        "conversational-ai": "会話型AI",
+        "product-manager": "プロダクトマネージャー"
+    },
+    "language": {
+        "select": "言語",
+        "current": "日本語"
+    }
+}

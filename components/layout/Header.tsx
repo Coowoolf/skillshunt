@@ -2,10 +2,13 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { SubmitModal } from '@/components/ui/InteractiveButtons';
+import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 
 export function Header() {
     const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
+    const t = useTranslations();
 
     return (
         <>
@@ -22,7 +25,7 @@ export function Header() {
                                     SkillsHunt
                                 </h1>
                                 <p className="text-xs text-[var(--text-muted)]">
-                                    Discover AI Agent Skills
+                                    {t('common.discoverSkills')}
                                 </p>
                             </div>
                         </Link>
@@ -33,29 +36,30 @@ export function Header() {
                                 href="/"
                                 className="text-[var(--text-secondary)] hover:text-[var(--blue-end)] transition-colors font-medium"
                             >
-                                Explore
+                                {t('nav.explore')}
                             </Link>
                             <Link
                                 href="/#categories"
                                 className="text-[var(--text-secondary)] hover:text-[var(--blue-end)] transition-colors font-medium"
                             >
-                                Categories
+                                {t('nav.categories')}
                             </Link>
                             <Link
                                 href="/#about"
                                 className="text-[var(--text-secondary)] hover:text-[var(--blue-end)] transition-colors font-medium"
                             >
-                                About
+                                {t('nav.about')}
                             </Link>
                         </nav>
 
-                        {/* CTA Button */}
-                        <div className="flex items-center gap-4">
+                        {/* CTA Button & Language Switcher */}
+                        <div className="flex items-center gap-3">
+                            <LanguageSwitcher compact />
                             <button
                                 className="btn-primary hidden sm:block"
                                 onClick={() => setIsSubmitModalOpen(true)}
                             >
-                                Submit Skill
+                                {t('nav.submitSkill')}
                             </button>
                         </div>
                     </div>

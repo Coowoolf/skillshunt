@@ -1,0 +1,97 @@
+{
+    "common": {
+        "skillsHunt": "技能狩猎",
+        "discoverSkills": "发现 AI 代理技能",
+        "tagline": "AI 代理技能的 Product Hunt"
+    },
+    "nav": {
+        "explore": "探索",
+        "categories": "分类",
+        "about": "关于",
+        "submitSkill": "提交技能"
+    },
+    "home": {
+        "heroTitle": "发现",
+        "heroHighlight": "AI 代理技能",
+        "heroSubtitle": "探索来自 Anthropic、Obra Superpowers、Composio 和社区的 {count}+ 个技能。找到适合你 AI 编程工作流的完美技能。",
+        "searchPlaceholder": "按名称、描述或标签搜索技能...",
+        "allSkills": "所有技能",
+        "sortBy": "排序：",
+        "sortPopular": "最热门",
+        "sortNewest": "最新",
+        "sortName": "名称 A-Z",
+        "noSkillsFound": "未找到匹配的技能。",
+        "tryDifferent": "尝试不同的搜索词或分类。"
+    },
+    "categories": {
+        "all": "所有技能",
+        "development": "开发",
+        "document": "文档",
+        "testing": "测试",
+        "debugging": "调试",
+        "collaboration": "协作",
+        "creative": "创意",
+        "productivity": "效率",
+        "meta": "元技能",
+        "benchmark": "基准测试",
+        "conversational-ai": "对话式 AI",
+        "product-manager": "产品经理"
+    },
+    "sources": {
+        "anthropic": "Anthropic",
+        "obra": "超能力",
+        "composio": "Composio",
+        "community": "社区",
+        "nanobanana": "NanoBanana",
+        "skillsmp": "技能市场",
+        "skillsbench": "技能基准"
+    },
+    "skill": {
+        "backToAll": "← 返回所有技能",
+        "source": "来源",
+        "category": "分类",
+        "platforms": "平台",
+        "tags": "标签",
+        "installation": "📦 安装",
+        "copyCommand": "复制命令",
+        "copied": "已复制！",
+        "viewOnGitHub": "在 GitHub 查看",
+        "upvote": "👍 点赞",
+        "upvoted": "✅ 已点赞"
+    },
+    "submit": {
+        "title": "提交技能",
+        "subtitle": "与社区分享你的 AI 代理技能",
+        "skillName": "技能名称",
+        "skillNamePlaceholder": "例如：数据库迁移助手",
+        "description": "描述",
+        "descriptionPlaceholder": "你的技能能做什么？",
+        "githubUrl": "GitHub 链接",
+        "githubUrlPlaceholder": "https://github.com/...",
+        "category": "分类",
+        "email": "你的邮箱",
+        "emailPlaceholder": "your@example.com",
+        "submitButton": "🚀 提交技能",
+        "success": "✅ 感谢提交！我们将尽快审核你的技能。"
+    },
+    "about": {
+        "title": "关于技能狩猎",
+        "description": "技能狩猎是 AI 代理技能的 Product Hunt。我们精选来自 Anthropic、Obra Superpowers、Composio 和开源社区的最佳技能。",
+        "discover": "发现",
+        "discoverDesc": "找到适合你工作流的完美 AI 代理技能",
+        "share": "分享",
+        "shareDesc": "提交你的技能，帮助社区成长",
+        "benchmark": "基准测试",
+        "benchmarkDesc": "用真实任务测试代理能力",
+        "starOnGitHub": "在 GitHub 点星",
+        "skillsBenchPartnership": "SkillsBench 合作"
+    },
+    "footer": {
+        "copyright": "© {year} 技能狩猎。使用 Next.js 构建 🎯",
+        "builtBy": "为 AI 代理社区用 ❤️ 构建"
+    },
+    "language": {
+        "select": "语言",
+        "current": "中文"
+    }
+}

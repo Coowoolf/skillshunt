@@ -1,0 +1,44 @@
+{
+    "common": {
+        "skillsHunt": "SkillsHunt",
+        "discoverSkills": "Descubre Habilidades de Agentes IA",
+        "tagline": "El Product Hunt para Habilidades de Agentes IA"
+    },
+    "nav": {
+        "explore": "Explorar",
+        "categories": "Categorías",
+        "about": "Acerca de",
+        "submitSkill": "Enviar Habilidad"
+    },
+    "home": {
+        "heroTitle": "Descubre",
+        "heroHighlight": "Habilidades de Agentes IA",
+        "heroSubtitle": "Explora más de {count} habilidades de Anthropic, Obra Superpowers, Composio y la comunidad.",
+        "searchPlaceholder": "Buscar habilidades por nombre, descripción o etiquetas...",
+        "allSkills": "Todas las Habilidades",
+        "sortBy": "Ordenar por:",
+        "sortPopular": "Más Populares",
+        "sortNewest": "Más Recientes",
+        "sortName": "Nombre A-Z",
+        "noSkillsFound": "No se encontraron habilidades.",
+        "tryDifferent": "Intenta con otro término de búsqueda."
+    },
+    "categories": {
+        "all": "Todas las Habilidades",
+        "development": "Desarrollo",
+        "document": "Documentos",
+        "testing": "Pruebas",
+        "debugging": "Depuración",
+        "collaboration": "Colaboración",
+        "creative": "Creativo",
+        "productivity": "Productividad",
+        "meta": "Meta",
+        "benchmark": "Benchmarks",
+        "conversational-ai": "IA Conversacional",
+        "product-manager": "Product Manager"
+    },
+    "language": {
+        "select": "Idioma",
+        "current": "Español"
+    }
+}
