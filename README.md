@@ -23,10 +23,6 @@
 
 https://github.com/user-attachments/assets/promo.mp4
 
-<video src="public/promo.mp4" controls width="100%">
-  Your browser does not support the video tag.
-</video>
-
 ---
 
 ## 🤔 Why SkillsHunt?
@@ -50,7 +46,7 @@ AI coding agents are everywhere—Claude Code, Cursor, Windsurf, OpenCode, Codex
 | 🎨 **Dopamine Geek Style** | Beautiful, modern UI with claymorphism and gradients |
 | 🌍 **50+ Languages** | Auto-detect and switch between 50+ languages |
 | 🔍 **Smart Search** | Search by name, description, or tags |
-| 📂 **Category Filters** | Development, Document, Testing, Conversational AI, Product Manager, and more |
+| 📂 **Category Filters** | Development, Document, Testing, Conversational AI, and more |
 | 👍 **Upvote System** | Vote for your favorite skills (persisted locally) |
 | 📝 **Submit Skills** | Share your own skills with the community |
 | 📱 **Responsive** | Works on desktop and mobile |
@@ -96,28 +92,6 @@ Plus 40+ more languages including Indonesian, Vietnamese, Thai, Turkish, Italian
 
 ---
 
-## 🚀 Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/Coowoolf/skillshunt.git
-cd skillshunt
-
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Build for production
-npm run build
-npm start
-```
-
-Visit [http://localhost:3000](http://localhost:3000) to see the app.
-
----
-
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 16 (App Router)
@@ -126,43 +100,6 @@ Visit [http://localhost:3000](http://localhost:3000) to see the app.
 - **i18n**: next-intl (50+ languages)
 - **Deployment**: Vercel
 - **Design System**: Custom "Dopamine Geek Style"
-
----
-
-## 📁 Project Structure
-
-```
-skillshunt/
-├── app/
-│   ├── page.tsx              # Homepage with skills grid
-│   ├── layout.tsx            # Root layout with Header/Footer
-│   └── skills/[slug]/        # Dynamic skill detail pages
-├── components/
-│   ├── ui/                   # SkillCard, SearchBar, LanguageSwitcher, etc.
-│   └── layout/               # Header, Footer
-├── data/
-│   └── skills.ts             # Skills database (56+ skills)
-├── messages/                 # Translation files (50+ languages)
-│   ├── en.json
-│   ├── zh.json
-│   ├── ja.json
-│   └── ...
-├── i18n.ts                   # i18n configuration
-└── public/                   # Static assets
-    ├── logo.jpg              # Mascot logo
-    └── promo.mp4             # Promo video
-```
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Here are some ways to help:
-
-1. **Submit a Skill** – Use the "Submit Skill" button on the website
-2. **Add Translations** – Help translate to more languages
-3. **Report Issues** – Found a bug? [Open an issue](https://github.com/Coowoolf/skillshunt/issues)
-4. **Pull Requests** – Improvements to code, UI, or documentation
 
 ---
 
@@ -181,9 +118,6 @@ We welcome contributions! Here are some ways to help:
 - [x] 50+ language internationalization
 - [x] 56+ curated skills
 - [ ] GitHub Skills Auto-Scraper (100+ stars threshold)
-- [ ] User authentication (GitHub OAuth)
-- [ ] Backend integration (Supabase)
-- [ ] Skill submission review system
 - [ ] Conversational AI category
 - [ ] Product Manager category
 - [ ] API for skill discovery
