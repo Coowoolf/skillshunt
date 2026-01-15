@@ -120,6 +120,64 @@ export default function Home() {
           </div>
         )}
       </section>
+
+      {/* About Section */}
+      <section id="about" className="mt-20 pt-12 border-t border-[rgba(0,0,0,0.05)]">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="w-20 h-20 gradient-orange rounded-2xl flex items-center justify-center text-4xl mx-auto mb-6">
+            🎯
+          </div>
+          <h2 className="heading-lg mb-4">About SkillsHunt</h2>
+          <p className="text-body text-lg mb-8">
+            SkillsHunt is the <strong>Product Hunt for AI Agent Skills</strong>.
+            We help developers discover, share, and explore the best skills for
+            Claude Code, Codex, OpenCode, and other AI coding assistants.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div className="card text-center">
+              <div className="text-4xl mb-3">🔍</div>
+              <h3 className="font-bold mb-2">Discover</h3>
+              <p className="text-sm text-[var(--text-muted)]">
+                Find the perfect skill for your AI workflow from our curated collection.
+              </p>
+            </div>
+            <div className="card text-center">
+              <div className="text-4xl mb-3">🤝</div>
+              <h3 className="font-bold mb-2">Share</h3>
+              <p className="text-sm text-[var(--text-muted)]">
+                Submit your own skills and grow with the community.
+              </p>
+            </div>
+            <div className="card text-center">
+              <div className="text-4xl mb-3">📈</div>
+              <h3 className="font-bold mb-2">Benchmark</h3>
+              <p className="text-sm text-[var(--text-muted)]">
+                Test agent capabilities with our curated benchmark tasks.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://github.com/Coowoolf/skillshunt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
+              ⭐ Star on GitHub
+            </a>
+            <a
+              href="https://skillsbench.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
+              📊 SkillsBench Partnership
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

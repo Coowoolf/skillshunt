@@ -37,6 +37,8 @@ const sourceColors: Record<string, string> = {
     composio: 'gradient-pink',
     community: 'gradient-orange',
     nanobanana: 'gradient-orange',
+    skillsmp: 'gradient-blue',
+    skillsbench: 'gradient-purple',
 };
 
 const sourceIcons: Record<string, string> = {
@@ -45,6 +47,8 @@ const sourceIcons: Record<string, string> = {
     composio: '🔗',
     community: '👥',
     nanobanana: '🍌',
+    skillsmp: '📦',
+    skillsbench: '📊',
 };
 
 export default async function SkillDetailPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -143,7 +147,7 @@ export default async function SkillDetailPage({ params }: { params: Promise<{ sl
                     <div className="card mb-6">
                         <h3 className="font-bold mb-4">Quick Actions</h3>
                         <div className="space-y-3">
-                            <UpvoteButton initialCount={skill.upvotes} />
+                            <UpvoteButton skillId={skill.id} initialCount={skill.upvotes} />
                             {skill.githubUrl && (
                                 <a
                                     href={skill.githubUrl}
