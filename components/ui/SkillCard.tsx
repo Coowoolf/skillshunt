@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export interface Skill {
@@ -57,6 +57,18 @@ const categoryIcons: Record<string, string> = {
 };
 
 export function SkillCard({ skill }: SkillCardProps) {
+    const [displayUpvotes, setDisplayUpvotes] = useState(skill.upvotes);
+    const [hasVoted, setHasVoted] = useState(false);
+
+    // Read vote state from localStorage on mount
+    useEffect(() => {
+        const votedSkills = JSON.parse(localStorage.getItem('skillshunt_votes') || '{}');
+        if (votedSkills[skill.id]) {
+            setHasVoted(true);
+            setDisplayUpvotes(votedSkills[skill.id].count || skill.upvotes + 1);
+        }
+    }, [skill.id, skill.upvotes]);
+
     const gradientClass = sourceColors[skill.source] || 'gradient-blue';
     const sourceIcon = sourceIcons[skill.source] || '✨';
     const categoryIcon = categoryIcons[skill.category] || categoryIcons.default;
@@ -101,7 +113,7 @@ export function SkillCard({ skill }: SkillCardProps) {
                 {/* Footer */}
                 <div className="flex items-center justify-between pt-3 border-t border-[rgba(0,0,0,0.05)]">
                     <div className="flex items-center gap-1 text-caption">
-                        {skill.platforms.map((platform) => (
+                        {skill.platforms.slice(0, 2).map((platform) => (
                             <span
                                 key={platform}
                                 className="px-2 py-1 bg-[rgba(0,0,0,0.03)] rounded-lg text-xs"
@@ -110,9 +122,9 @@ export function SkillCard({ skill }: SkillCardProps) {
                             </span>
                         ))}
                     </div>
-                    <div className="flex items-center gap-1 text-caption">
-                        <span className="text-lg">👍</span>
-                        <span>{skill.upvotes}</span>
+                    <div className={`flex items-center gap-1 text-caption ${hasVoted ? 'text-green-600 font-medium' : ''}`}>
+                        <span className="text-lg">{hasVoted ? '✅' : '👍'}</span>
+                        <span>{displayUpvotes}</span>
                     </div>
                 </div>
             </div>
