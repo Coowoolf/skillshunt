@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { SubmitModal } from '@/components/ui/InteractiveButtons';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
@@ -17,9 +18,13 @@ export function Header() {
                     <div className="flex items-center justify-between h-16">
                         {/* Logo */}
                         <Link href="/" className="flex items-center gap-3">
-                            <div className="w-10 h-10 gradient-orange rounded-xl flex items-center justify-center text-white font-bold text-lg">
-                                🎯
-                            </div>
+                            <Image
+                                src="/logo.jpg"
+                                alt="SkillsHunt Mascot"
+                                width={44}
+                                height={44}
+                                className="rounded-xl"
+                            />
                             <div>
                                 <h1 className="text-lg font-bold text-[var(--text-primary)]">
                                     SkillsHunt
