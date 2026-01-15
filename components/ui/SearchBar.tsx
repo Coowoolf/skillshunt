@@ -31,7 +31,7 @@ export function SearchBar({ value, onChange, placeholder = 'Search skills...' }:
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
                 placeholder={placeholder}
-                className="search-input pl-16"
+                className="search-input pl-[4.5rem]"
             />
         </div>
     );
