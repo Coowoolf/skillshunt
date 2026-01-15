@@ -8,13 +8,14 @@ export interface Skill {
     name: string;
     slug: string;
     description: string;
-    source: 'anthropic' | 'obra' | 'composio' | 'community' | 'nanobanana';
+    source: 'anthropic' | 'obra' | 'composio' | 'community' | 'nanobanana' | 'skillsmp' | 'skillsbench';
     category: string;
     tags: string[];
     platforms: string[];
     installCommand?: string;
     githubUrl?: string;
     upvotes: number;
+    difficulty?: 'easy' | 'medium' | 'hard';
 }
 
 interface SkillCardProps {
@@ -27,6 +28,8 @@ const sourceColors: Record<string, string> = {
     composio: 'gradient-pink',
     community: 'gradient-orange',
     nanobanana: 'gradient-orange',
+    skillsmp: 'gradient-blue',
+    skillsbench: 'gradient-purple',
 };
 
 const sourceIcons: Record<string, string> = {
@@ -35,6 +38,8 @@ const sourceIcons: Record<string, string> = {
     composio: '🔗',
     community: '👥',
     nanobanana: '🍌',
+    skillsmp: '📦',
+    skillsbench: '📊',
 };
 
 const categoryIcons: Record<string, string> = {
@@ -47,6 +52,7 @@ const categoryIcons: Record<string, string> = {
     debugging: '🔍',
     collaboration: '🤝',
     meta: '⚙️',
+    benchmark: '📈',
     default: '✨',
 };
 
