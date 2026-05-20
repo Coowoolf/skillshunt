@@ -838,6 +838,19 @@ export const skills: Skill[] = [
         githubUrl: 'https://github.com/modelcontextprotocol/servers',
         upvotes: 2000,
     },
+    {
+        id: 'sequenzy-email-marketing',
+        name: 'Sequenzy Email Marketing',
+        slug: 'sequenzy-email-marketing',
+        description: 'Operate email marketing workflows from an agent: subscribers, segments, templates, campaigns, lifecycle sequences, transactional sends, and stats.',
+        source: 'community',
+        category: 'productivity',
+        tags: ['email', 'marketing', 'campaigns', 'sequences', 'subscribers'],
+        platforms: ['claude-code', 'codex'],
+        installCommand: 'npx skills add Sequenzy/skills --skill sequenzy-email-marketing',
+        githubUrl: 'https://github.com/Sequenzy/skills/tree/main/skills/sequenzy-email-marketing',
+        upvotes: 1,
+    },
 ];
 
 export const categories = [
