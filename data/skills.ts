@@ -204,6 +204,21 @@ export const skills: Skill[] = [
         upvotes: 267,
     },
 
+    {
+        id: 'sequenzy-email-marketing',
+        name: 'Sequenzy Email Marketing',
+        slug: 'sequenzy-email-marketing',
+        description: 'Operate lifecycle and transactional email marketing workflows from AI agents: subscribers, segments, campaigns, sequences, templates, stats, and generated copy.',
+        source: 'community',
+        category: 'productivity',
+        tags: ['Email Marketing', 'Automation', 'MCP', 'Claude', 'Codex'],
+        platforms: ['claude-code', 'codex', 'hermes'],
+        installCommand: 'npx -y skills add Sequenzy/skills --skill sequenzy-email-marketing',
+        githubUrl: 'https://github.com/Sequenzy/skills/tree/main/skills/sequenzy-email-marketing',
+        upvotes: 42,
+        difficulty: 'medium',
+    },
+
     // ===== SkillsMP Skills =====
     {
         id: 'skillsmp-agent-identifier',
